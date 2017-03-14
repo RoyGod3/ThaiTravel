@@ -302,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489499681326</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="build Person &amp; Discover model.">
+      <created>1489499877173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1489499877173</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -351,7 +358,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build search model." />
     <MESSAGE value="build Sentiment model." />
-    <option name="LAST_COMMIT_MESSAGE" value="build Sentiment model." />
+    <MESSAGE value="build Person &amp; Discover model." />
+    <option name="LAST_COMMIT_MESSAGE" value="build Person &amp; Discover model." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
