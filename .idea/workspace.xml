@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dddd06-9425-41dd-a699-d7699016f4fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/dbhelper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/templates/Search/sceneList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/homePage.html" afterPath="$PROJECT_DIR$/Search/templates/Search/homePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/views.py" afterPath="$PROJECT_DIR$/Search/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Concrete.css" afterPath="$PROJECT_DIR$/static/css/Concrete.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Note.css" afterPath="$PROJECT_DIR$/static/css/Note.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Search.css" afterPath="$PROJECT_DIR$/static/css/Search.css" />
@@ -442,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490263153885</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="search app coding...">
+      <created>1490293925562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490293925562</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
