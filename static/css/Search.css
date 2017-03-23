@@ -1,0 +1,94 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav {
+	padding-top: 20px;
+}
+
+#myCarousel {
+	margin-top: 50px;
+}
+
+.navbar-brand img {
+	display: block;
+    margin-left: -25px;
+    margin-top: -16px;
+    height: 100px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.linkColor a:link, a:visited {
+	color:#0000FF; 
+	text-decoration:underline; 
+} 
+
+.linkColor a:hover, a:active { 
+	color:#000000; 
+	text-decoration:none; 
+}
+
+.input_text {
+	margin-left: 707px;
+	width:296px; 
+	height:30px; 
+	border-color:#00344B;
+}
+
+.search {
+	margin-left:-5px;
+	border-radius: 0px;
+	width: 30px;
+	height: 30px;
+	border-style: none;
+	background-color: #00344B;
+}
+
+.hotSearch {
+	margin: 150px 0px 50px 8%;
+}
+
+.word img{
+	display: inline;
+}
+
+.word {
+	padding-top: 20px;
+	height: 150px;
+	width: 200px;
+}
+
+.huanye {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.huanye button {
+	border-radius: 0px;
+	margin-right: -0.3em;
+}
+
+#footer {
+	margin-top: 50px;
+	background-color: #00344B;
+	border-top: 1px solid #ccc;
+	padding: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font color: #FFF;
+}
+
+#footer p,#footer span{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #FFF;
+}

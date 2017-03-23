@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from Search import views as search_view
+import settings
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^hello/', search_view.hello, name='search_hello')
+    url(r'search/home', search_view.home, name='search_home'),
+    url(r'search/search', search_view.search, name='search_search'),
+    # url(r'^hello/', search_view.hello, name='search_hello'),
+    url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_URL}),
 ]

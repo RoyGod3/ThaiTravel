@@ -1,0 +1,42 @@
+!SESSION 2017-02-21 19:41:02.446 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -login -application com.aptana.commandline.launcher.LauncherApplication D:\代码\html5\第二课资料\代码练习\bookstrap\img\Demo3.html
+Command-line arguments:  -os win32 -ws win32 -arch x86 -login -data   -application com.aptana.commandline.launcher.LauncherApplication D:\代码\html5\第二课资料\代码练习\bookstrap\img\Demo3.html
+
+!ENTRY com.aptana.core 1 0 2017-02-21 19:41:03.976
+!MESSAGE (Build null) [INFO]  ide start check begin
+
+!ENTRY com.aptana.rcp 4 0 2017-02-21 19:41:04.155
+!MESSAGE (Build null) [ERROR]  getRawLocationURI: file:/D:/代码/html5/第二课资料/代码练习/bookstrap/img
+
+!ENTRY com.aptana.rcp 4 0 2017-02-21 19:41:04.173
+!MESSAGE (Build null) [ERROR]  checkInstanceLocation
+
+!ENTRY com.pandora.core.utils 4 0 2017-02-21 19:41:04.267
+!MESSAGE (Build null) [ERROR]  remote-debugging-port == 4153
+
+!ENTRY com.aptana.rcp 4 0 2017-02-21 19:41:04.335
+!MESSAGE (Build null) [ERROR]  init CEF
+
+!ENTRY org.eclipse.ui 2 0 2017-02-21 19:41:04.558
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-02-21 19:41:04.558
+!MESSAGE Could not parse key sequence: plug-in='com.pandora.ui', id='org.eclipse.ui.edit.text.contentAssist.proposals', keySequence='Ctrl+Sapce'
+
+!ENTRY org.eclipse.ui 4 4 2017-02-21 19:41:06.002
+!MESSAGE Unable to create menu item "org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction", command "org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction" not defined
+
+!ENTRY com.aptana.scripting 4 0 2017-02-21 19:41:09.282
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'Build–in constant' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.scripting 4 0 2017-02-21 19:41:09.288
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'library class/type' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.rcp 4 0 2017-02-21 19:41:10.192
+!MESSAGE (Build null) [ERROR]  ---------------------start check----------------------
+
+!ENTRY com.aptana.rcp 4 0 2017-02-21 19:41:10.206
+!MESSAGE check mode

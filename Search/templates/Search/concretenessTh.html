@@ -1,0 +1,208 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/Concrete.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+		<style type="text/css">
+			body {
+				font-family:"楷体", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<!--基本导航条，包含标题和列表-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container"> 
+				<!--泰好玩logo-->
+				<div class="navbar-header">
+					<a class="navbar-brand" style="padding-top: 5px;"><img  src="{% static 'img/logo.png' %}" style="height: 100px;"></a>
+				</div>	
+				<!--导航条的文字-->
+				<div class="collapse navbar-collapse" id="navbar_collapse">
+					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
+						<li >
+							<a href="../Search/home"><i class="glyphicon glyphicon-home"></i> 首页</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
+							<ul class="dropdown-menu " >
+								<li class="linkColor">
+									<a href="travelNote.html#navbar_collapse">推荐游记</a>
+								</li>
+								<li class="linkColor">
+									<a href="hotSearch.html" >热门搜索</a>
+								</li>
+							</ul>
+						</li>
+						<li class="linkColor active">
+							<a href="#"><i class="glyphicon glyphicon-hand-right"></i> 详情</a>
+						</li>
+						<li class="linkColor">
+							<a href="#"><i class="glyphicon glyphicon-user"></i> 登录</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</nav>
+		
+		
+		<div class="article">
+			<center>
+			<p class="title" >初涉遊艇领域想选个岛？不来攀牙湾你真的亏大啦</p>
+			</center>			
+			<!--星级评价图片及图标-->
+			<div class="commentLogo">
+				<img src="img/comment.png">
+				<div class="btn-group">
+    				<button type="button" class="dropdown-toggle commentLogoButton" data-toggle="dropdown">
+    					<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+						<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+						<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+						<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+    				</button>
+    				<ul class="dropdown-menu pull-right" role="menu" style="color: #ffec4b;">
+        				<li >
+							<span style="color:#00344B ;">中:</span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span></br>
+						</li>
+						<li>
+							<span style="color:#00344B ;">英:</span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span></br>
+						</li>
+						<li>
+							<span style="color:#00344B ;">泰:</span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+							<span class="glyphicon glyphicon-star" style="width: 4px;"></span>
+						</li>
+    				</ul>
+				</div>
+			</div>
+			
+			<!--攀牙湾的图片-->
+			<div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="2000" data-pause="hover" data-wrap="false">
+				<div class="carousel-inner">
+					<div class="imgLeft">
+						<img src="{% static 'img/panyawanLeft.png' %}"/>
+					</div>
+					<div class="item active imgMid" >
+						<img src="{% static 'img/panyawanMid1.png' %}" />
+					</div>
+					<div class="item imgMid" >
+						<img src="{% static 'img/panyawanMid2.png' %}" />
+					</div>
+					<div class="item imgMid" >
+						<img src="{% static 'img/panyawanMid3.png' %}" />
+					</div>
+					<div class="imgRight">
+						<img src="{% static 'img/panyawanRight.png' %}">
+					</div>
+				</div>
+				<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+					<img src="{% static 'img/iconDisosure1.png' %}" style="width: 100px;padding-top: 150px;"/>
+				</a>
+				<a href="#myCarousel" data-slide="next" class="carousel-control right">
+					<img src="{% static 'img/iconDisosure2.png' %}" style="width: 100px;padding-top: 150px"/>
+				</a>
+			</div>			
+		</div>
+		
+		<div class="word">
+			<p>攀牙湾位于普吉岛东北角75公里处，属于攀牙府，被誉为全岛风景最美丽的地方，有泰国的“小桂林”之称。</p> 
+    		<p>这里遍布着数以百计的形态奇特的石灰岩小岛，小岛的名称与其形状极为吻合。还有巧夺天工的钟乳石岩穴和数不清的怪石、海洞。其中007岛（也称铁钉岛）、钟乳岛石洞 （即佛庙洞和隐士洞）更以其天然奇景而名声在外。</p>
+    		<p>海湾內遍布珍贵的胎生植物红树林，红树林与小渔村之间有河道，坐在小船上观赏着红树林和小渔村，怡然自得。</p>
+			<div class="tag">
+				<button>美食</button>
+				<button>好玩</button>
+				<button>天堂</button>
+			</div>
+			<hr style="width: 800px;border:1px solid #7f99a5; margin-left: -25px;"/>
+		</div>
+		
+		<div class="comment">
+			<div >
+				<a href="concretenessCh.html"><button style="border-right: 1px solid #b0bdc3;">中</button></a>
+				<a href="concretenessEn.html"><button style="border-right: 1px solid #b0bdc3;">英</button></a>
+				<a href="javascript:void(0);"><button >泰</button></a>
+			</div>
+			<div class="user">
+				<div class="media">
+					<div class="pull-left">
+						<img src="{% static 'img/Timg1.png' %}" class="img-circle">
+					</div>
+					<div class="media-body">
+						<p>
+							@PINK พวกเราเริ่มเดินทางวันที่ในรอยัลภูเก็ตมารีน่าด้วยเรือสปีดโบ๊ท และประมาณ 25 ผู้เข้าพัก หลังจากที่เรามาถึงประมาณ 40 นาทีเป็นเกาะซึ่ง canoos ด้วยพม่าก็พร้อมที่จะพาเราผ่านระบบถ้ำบางชนิดหลักแหลมในของที่พักบนเกาะ หลังจากทริปนี้ เราอย่างต่อเนื่องทางไปเกาะเจมส์บอนด์ ที่นี่มันค่อนข้างยุ่ง ก็ถึงเกาะปันหยีหมู่บ้านชาวประมงบนเสา ที่นี่เราได้รับประทานอาหารกลางวันร่วมกันกับแขกคนอื่น ๆ นับร้อย อย่างไรก็ดี อาหารก็ค่อนข้างดี แล้วให้เราไปพายเรือแคนูที่เกาะอื่นอีกครั้ง ก่อนที่จะกลับมาพักที่รอยัลภูเก็ตมารีน่า เราไปว่ายน้ำ และเกียจคร้านอยู่บนชายหาดที่สวยงาม วันก่อนก็เห็นเรารู้ว่ามัน 
+						</p>
+					</div>
+				</div>						
+			</div>
+			<hr />
+			<div class="user">
+				<div class="media">
+					<div class="pull-left">
+						<img src="{% static 'img/Zimg1.png' %}" class="img-circle">
+					</div>
+					<div class="media-body">
+						<p>
+							@Teddy ทัวร์สี่เกาะทั้งจากภูเก็ต และกระบี่โฮลดิ้ง (ครอบคลุมชุดที่แตกต่างกันของหมู่เกาะ) ผมเอามาจากต้นกำเนิดที่จังหวัดภูเก็ตซึ่งณอ่าว เราจองทัวร์ในโรงแรมของเราอยู่ใกล้กับตลาดตอนเย็นก่อนสำหรับ 1200 บาทต่อคนต่อคืนที่โรงแรมรวมรับ และส่ง อาหารกลางวัน เครื่องชงกาแฟ/ชา/น้ำ น้ำผลไม้ผลไม้ และคุกกี้/บน - คณะกรรมการ ล่องเรือทานอาหารในห้องครัว - คณะกรรมการประสานงานและใจดีมากไปเตรียมอาหารมังสวิรัติตามคำร้องขอ มาที่เกาะทัวร์ 15 เราใหญ่เรือจากจังหวัด และหยุดณอ่าวแรกคือเกาะห้อง บริเวณนี้มีขนาดใหญ่ไม่มี หมู่เกาะขนาดเล็ก และหินของถ้ำมีไม่กี่ที่ก่อตัว stallactite เรือแคนูพร้อมฝีพาย (รวมอยู่ในแพคเกจทัวร์) พาคุณไปรอบเกาะ และถ้ำเหล่านี้ คุณต้องก้มตัวผ่านไปกับรูปทรงธรรมชาติสวยที่ถ้ำเหล่านี้ หยุดถัดไปคือเกาะเจมส์บอนด์โดยยิงทำให้เป็นที่นิยมของภาพยนตร์เจมส์บอนด์บางทศวรรษที่ผ่านมา บางเกาะมีร้านค้า sovenair เดอะหยุดต่อไปอีกว่าเกาะนั้นมีถ้ำ และทะเลสาบที่ไหลผ่านถ้ำ ครั้งหนึ่งบนเกาะ ลากูนสามารถเดินผ่านไปอีกด้านหนึ่งของเกาะกับหินโครงสร้าง และต้นไม้ที่สวยงาม หยุดสุดท้ายก็เป็นชายหาดที่มีน้ำตื้นเพื่อให้คนสามารถเพลิดเพลินไปกับการว่ายน้ำและ canoing และจังหวัดณอ่าวไปแล้วกลับมา
+						</p>
+					</div>
+				</div>						
+			</div>
+			<hr />
+			<div class="user">
+				<div class="media">
+					<div class="pull-left">
+						<img src="{% static 'img/Timg2.png' %}" class="img-circle">
+					</div>
+					<div class="media-body">
+						<p>
+							@ly เกาะ Kasts ทรงออกจากทะเลในส่วนนี้ของอันดามัน - บริเวณนี้มีมากมาย และมีความรู้สึกว่าเวลานั้นลืมที่ดิน ล่องเรือไปในเรือที่นี่เป็นประสบการณ์ที่ยอดเยี่ยม และการพายเรือคายัคเป็นที่นิยมมาก มูลค่าการกล่าวขวัญขยะที่มันไปหยุดแวะที่หมู่บ้านยิปซีทะเลตกปลาทะเลที่ยอดเยี่ยม ซึ่งคุณสามารถเพลิดเพลินไปกับอาหารทะเลอาหารกลางวัน สดอย่างไม่น่าเชื่อ
+						</p>
+					</div>
+				</div>						
+			</div>
+			<hr />
+			<div class="user">
+				<div class="media">
+					<div class="pull-left">
+						<img src="{% static 'img/Yimg1.png' %}" class="img-circle">
+					</div>
+					<div class="media-body">
+						<p>
+							@lyr เราจ่ายเงินสำหรับเที่ยวแบบวันเดียวที่ฉัน และสามีของฉันบนนี้วันธรรมดาเข้าอุทยานแห่งชาติ มันเยี่ยมมาก! เรามีความสุขกับทุกส่วนของเรือการเดินทางนี้ ไม่สามารถจำชื่อบริษัททัวร์ แต่ชาวบ้าน ทัศนียภาพที่ดีออกจากถ้ำ สัตว์ป่าและน้ำทะเลสีฟ้า ดีจริง ๆ จ่าย 6000 บาทต่อคนต่อคืนพร้อมอาหาร 2 เราคิดว่าเป็นข้อตกลงที่ดี เพราะมันจะมีไกด์ของเราเองที่เราพายเรือคายัค
+						</p>
+					</div>
+				</div>						
+			</div>
+		</div>
+		
+		<div class="themore">
+			<button >查看更多</button>
+		</div>
+		
+		<!--底部-->
+		<footer id="footer">
+			<div class="container">
+				<p class="footer-p">关于我们 | 意见建议 | 其他问题</p>
+				<p>Natural Language Processing. <span class="footer-logo">TOURISM EVALUATION</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
+			</div>
+		</footer>
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	</body>
+</html>

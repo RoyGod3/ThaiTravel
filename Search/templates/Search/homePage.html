@@ -1,0 +1,186 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>泰好玩首页</title>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/Home.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+		<style type="text/css">
+			body {
+				font-family:"楷体", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+			}
+		</style>
+	</head>
+
+	<body>		
+		<!--基本导航条，包含标题和列表-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+
+					<a class="navbar-brand" style="padding-top: 5px;">
+						<img  src="{% static 'img/logo.png' %}" style="height: 100px;"></a>
+				</div>		
+				<div class="collapse navbar-collapse" id="navbar_collapse">
+					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
+						<li class="active">
+							<a href="#"><i class="glyphicon glyphicon-home"></i> 首页</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
+							<ul class="dropdown-menu " >
+								<li class="linkColor">
+									<a href="travelNote.html#navbar_collapse">推荐游记</a>
+								</li>
+								<li class="linkColor">
+									<a href="hotSearch.html" >热门搜索</a>
+								</li>
+							</ul>
+						</li>
+						<li class="linkColor">
+							<a href="#"><i class="glyphicon glyphicon-hand-right"></i> 注册</a>
+						</li>
+						<li class="linkColor">
+							<a href="#"><i class="glyphicon glyphicon-user"></i> 登录</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</nav>
+
+		<div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="2000" data-pause="hover">
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+	
+				<div class="carousel-inner">
+					<div class="item active" >
+						<img src="{% static 'img/sea1.jpg' %}" />
+					</div>
+					<div class="item" >
+						<img src="{% static 'img/sea3.jpg' %}" />
+					</div>
+					<div class="item" >
+						<img src="{% static 'img/sea4.jpg' %}" />
+					</div>
+				</div>
+				
+				<div class="hotSearch" >
+					<img src="{% static 'img/abstract.png' %}" style="width: 700px;"/></br>
+					<form action="./search" method="post">
+						{% csrf_token %}
+						<input type="text" id="input_text" name="search_word" style="color:#000000;"/>
+						<button  class="search" value="submit" onclick="javascript:form.submit();"><i class="glyphicon glyphicon-search" style="color: #FFFFFF;width: 40px;"></i>
+						</button>
+					</form>
+					<p >
+						<span class="underlineWord">热门搜索</span>
+						<span >:</span>
+						<span class="underlineWord">曼谷</span>
+						<span>、</span>
+						<span class="underlineWord">清莱</span>
+						<span>、</span>
+						<span class="underlineWord">清迈</span>
+						<span>、</span>
+						<span class="underlineWord">芭提雅</span>	
+					</p>			
+				</div>
+	
+				<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+					<img src="{% static 'img/iconDisosure1.png' %}" style="width: 100px;padding-top: 150px;"/>
+				</a>
+				<a href="#myCarousel" data-slide="next" class="carousel-control right">
+					<img src="{% static 'img/iconDisosure2.png' %}" style="width: 100px;padding-top: 150px"/>
+				</a>
+		</div>
+
+		<div class="tab">
+			<div class="container">
+				<div class="word" style="font-size:30px;">
+					<button class="rectangle"></button>
+					<span>热门地点</span>
+					<button class="rectangle" style="margin-left: 410px;"></button>
+					<span>推荐游记</span>
+				</div>
+				<div class="row" style="margin-bottom: 50px;">
+					<div class="col-md-3 col">
+						<div class="media">
+							<div class="pull-left">
+								<a href="#">
+									<img src="{% static 'img/turtle.jpg' %}" style="width: 165px; height: 165px;" class=" media-object" />
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">斯米兰群岛</h4>
+								<p class='tab-p2'>目的地：斯米兰</p>
+								<p>错过等半年丨在斯米兰群岛，邂逅大海龟！</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col">
+						<div class="media">
+							<div class="pull-left">
+								<a href="#">
+									<img src="{% static 'img/lanmiao.jpg' %}" style="width: 165px; height: 165px;" class=" media-object" />
+								</a>
+							</div>
+
+							<div class="media-body">
+								<h4 class="media-heading">清迈蓝庙</h4>
+								<p class='tab-p2'>目的地：清迈</p>
+								<p>除了黑白庙，泰国居然还有2座“蓝庙”？！</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col">
+						<div class="media">
+							<div class="pull-left">
+								<a href="#">
+									<img src="{% static 'img/mangu.jpg' %}" style="width: 165px; height: 165px;" class=" media-object " />
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">大皇宫</h4>
+								<p class='tab-p2'>目的地：曼谷</p>
+								<p>曼谷 丹嫩沙朵水上市场+大皇宫+美攻火车市场+玉佛寺+四面佛一日游 </p>
+							</div>
+						</div>
+					</div>			
+					<div class="col-md-3 col">
+						<div class="media">
+							<div class="pull-left">
+								<a href="#">
+									<img src="{% static 'img/Racha.jpg' %}" style="width: 165px; height: 165px;" class="media-object "/>
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">皇帝岛</h4>
+								<p class='tab-p2'>目的地：皇帝岛</p>
+								<p>初涉潜水领域想选个岛？不来皇帝岛你真的亏大啦！</p>
+							</div>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+
+		<!--底部-->
+		<footer id="footer">
+			<div class="container">
+				<p class="footer-p">关于我们 | 意见建议 | 其他问题</p>
+				<p>Natural Language Processing. <span class="footer-logo">TOURISM EVALUATION</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
+			</div>
+		</footer>
+
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	</div>
+	</body>
+
+
+</html>
