@@ -1,0 +1,295 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>泰好玩推荐游记</title>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/Note.css' %}" />
+	</head>
+	
+	<body>
+		<!--基本导航条，包含标题和列表-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" style="padding-top: 5px;"><img  src="{% static 'img/logo.png' %}" style="height: 100px;"></a>
+				</div>		
+				<div class="collapse navbar-collapse" id="navbar_collapse">
+					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
+						<li >
+							<a href="../search/home"><i class="glyphicon glyphicon-home"></i> 首页</a>
+						</li>
+						<li class="active">
+							<a href="#" ><i class="glyphicon glyphicon-eye-open"></i> 推荐游记</a>
+						</li>
+						<li class="linkColor">
+							<a href="hotSearch.html"><i class="glyphicon glyphicon-hand-right"></i> 熱門搜索</a>
+						</li>
+						<li class="linkColor">
+							<a href="#"><i class="glyphicon glyphicon-user"></i> 登录</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</nav>
+		
+		<div class="title">
+			<div class="hotArticles" >
+				<!--<button  class="rectangle"></button>-->
+				<span style=" font-size:25px ;">推荐游记</span>
+				<input type="text" class="input_text" />
+				<button  class="search">
+				<i class="glyphicon glyphicon-search" style="color: #FFFFFF;"></i>
+				</button>
+			</div>
+		</div>
+		
+		
+		<div class="pictures">
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/panyawanMid1.png' %}"/>
+				<div class="word">
+					<a href="concretenessCh.html"><p style="font-size: 18px;"> 初涉游艇领域想选个岛？不来攀牙湾你真的亏大啦！</p></a>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/turtle.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 错过等半年丨在斯米兰群岛，邂逅大海龟！</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/lanmiao.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 除了黑白庙，泰国居然还有2座“蓝庙”？！</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/mangu.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;">2017年亚洲50佳餐厅榜单揭晓，第一名又在泰国水上威尼斯曼谷！</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/yufoshi.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 来这里看异彩纷呈的玉佛像</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/suoluoguangchang.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 不知道泰国晚上去哪玩？看完这些你就知道了！</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/huangdidao.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 碧海蓝天，泰美好</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/qinglaiheibaimiao.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 世界并不是非黑即白，但正是白庙和黑庙的存在才成就了清莱的美名</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/museum.jpeg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 世界上最大最复古的玩具博物馆，居然在泰国！</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="picAdd" src="{% static 'img/church.jpg' %}"/>
+				<div class="word">
+					<p style="font-size: 18px;"> 快来看看“千佛之国”的大教堂</p>
+					<span >中:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >英:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span></br>
+					<span >泰:</span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--换页按钮-->
+		<div class="huanye">
+			<center>
+				<button class="btn btn-default">首页</button>
+				<button class="btn btn-default">上一页</button>
+				<button class="btn btn-default">1</button>
+				<button class="btn btn-default">2</button>
+				<button class="btn btn-default">3</button>
+				<button class="btn btn-default">下一页</button>
+				<button class="btn btn-default">尾页</button>
+			</center>
+		</div>
+		
+		<!--底部-->
+		<footer id="footer">
+			<div class="container">
+				<p class="footer-p">关于我们 | 意见建议 | 其他问题</p>
+				<p>Natural Language Processing. <span class="footer-logo">TOURISM EVALUATION</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
+			</div>
+		</footer>
+
+	</body>
+</html>

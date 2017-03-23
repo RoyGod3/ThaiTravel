@@ -2,68 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dddd06-9425-41dd-a699-d7699016f4fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/.metadata/.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Racha.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Timg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Timg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Yimg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Yimg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Yimg3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/Zimg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/abstract.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/church.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/comment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/heibaimiao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/huangdidao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/iconDisosure1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/iconDisosure2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/lanmiao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/mangu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/museum.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawanMid1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawanMid2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawanMid3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawanleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawanright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/qinglaiheibaimiao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/qingmai.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/sea1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/sea3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/sea4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/suoluoguangchang.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/turtle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/yufoshi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/templates/Search/homePage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/Concrete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/Home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/Note.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/Search.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/.metadata/.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/.metadata/version.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/dbhelper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/templates/Search/sceneList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/models.py" afterPath="$PROJECT_DIR$/Search/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/homePage.html" afterPath="$PROJECT_DIR$/Search/templates/Search/homePage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/views.py" afterPath="$PROJECT_DIR$/Search/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThaiTravel/settings.py" afterPath="$PROJECT_DIR$/ThaiTravel/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThaiTravel/urls.py" afterPath="$PROJECT_DIR$/ThaiTravel/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Concrete.css" afterPath="$PROJECT_DIR$/static/css/Concrete.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Note.css" afterPath="$PROJECT_DIR$/static/css/Note.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Search.css" afterPath="$PROJECT_DIR$/static/css/Search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/.metadata/.log" afterPath="$PROJECT_DIR$/static/img/.metadata/.log" />
     </list>
     <ignored path="ThaiTravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,21 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Search/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="380">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -105,49 +45,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
+      <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Search/dbhelper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+            <state relative-caret-position="368">
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
               <folding>
-                <element signature="e#23#332#1" expanded="false" />
+                <element signature="e#22#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThaiTravel/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="e#619#660#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homePage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/templates/Search/homePage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="concretenessCh.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="concretenessCh.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessCh.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+            <state relative-caret-position="2280">
+              <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sceneList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Search/templates/Search/sceneList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-765">
+              <caret line="248" column="70" selection-start-line="248" selection-start-column="70" selection-end-line="248" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -174,10 +98,12 @@
         <option value="$PROJECT_DIR$/ThaiTravel/settings.py" />
         <option value="$PROJECT_DIR$/Search/templates/Search/homePage.html" />
         <option value="$PROJECT_DIR$/ThaiTravel/urls.py" />
-        <option value="$PROJECT_DIR$/Search/views.py" />
-        <option value="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" />
         <option value="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" />
         <option value="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" />
+        <option value="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" />
+        <option value="$PROJECT_DIR$/Search/templates/Search/sceneList.html" />
+        <option value="$PROJECT_DIR$/Search/dbhelper.py" />
+        <option value="$PROJECT_DIR$/Search/views.py" />
       </list>
     </option>
   </component>
@@ -272,24 +198,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThaiTravel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThaiTravel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -308,7 +216,7 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.utils">
+  <component name="RunManager" selected="Python.dbhelper">
     <configuration default="false" name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,6 +230,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ThaiTravel" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ThaiTravel/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dbhelper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ThaiTravel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Search/dbhelper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -460,12 +385,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.utils" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dbhelper" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.utils" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.dbhelper" />
+        <item index="1" class="java.lang.String" itemvalue="Python.utils" />
       </list>
     </recent_temporary>
   </component>
@@ -508,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489500175003</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="search app coding...">
+      <created>1490263153885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1490263153885</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -522,25 +456,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21757323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29393306" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -558,11 +492,12 @@
     <MESSAGE value="build search model." />
     <MESSAGE value="build Sentiment model." />
     <MESSAGE value="build Person &amp; Discover model." />
-    <option name="LAST_COMMIT_MESSAGE" value="build Person &amp; Discover model." />
+    <MESSAGE value="search app coding..." />
+    <option name="LAST_COMMIT_MESSAGE" value="search app coding..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -742,21 +677,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/models.py">
+    <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessTh.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/urls.py">
+    <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessEn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#619#660#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,37 +715,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ThaiTravel/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#619#660#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/MySQLdb/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/MySQLdb/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Search/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="380">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessTh.html">
+    <entry file="file://$PROJECT_DIR$/Search/templates/Search/sceneList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessEn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="44" />
+        <state relative-caret-position="-765">
+          <caret line="248" column="70" selection-start-line="248" selection-start-column="70" selection-end-line="248" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessCh.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+        <state relative-caret-position="2280">
+          <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#22#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
