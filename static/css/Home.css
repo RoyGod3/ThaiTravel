@@ -1,5 +1,5 @@
 body {
-	font-family:"楷体", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-family:"楷体", "微软雅黑", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 }
 
 * {
@@ -7,16 +7,24 @@ body {
 	padding: 0;
 }
 
-.navbar-nav {
+/*调节导航条与页面头部的位置*/
+.navbar-nav { 
 	padding-top: 20px;
 }
 
-#myCarousel {
+/*轮播图片的div框架与导航条的距离*/
+#myCarousel { 
 	margin-top: 70px;
 }
 
-.carousel-inner {
+/*调整热门搜索输入框的位置*/
+.carousel-inner { 
 	position: relative;
+}
+
+.carousel-inner img {
+	width: 100%;
+	margin: 0 auto;
 }
 
 .navbar-brand img {
@@ -26,7 +34,8 @@ body {
     height: 100px;
 }
 
-.hotSearch {
+/*调整热门搜索输入框的位置*/
+.hotSearch { 
 	position:absolute; 
 	top:43%;
 	left:28%;
@@ -37,15 +46,12 @@ body {
 	margin-top: 10px;
 }
 
+/*给热门搜索输入框下面的几个地点加上鼠标悬停时出现下划线效果*/
 .underlineWord:hover{
 	text-decoration: underline;
 }
 
-.carousel-inner img {
-	width: 100%;
-	margin: 0 auto;
-}
-
+/*导航条首页、发现等文字的鼠标事件*/
 .linkColor a:link, a:visited {
 	color:#0000FF; 
 	text-decoration:underline; 
@@ -57,6 +63,7 @@ body {
 	text-decoration:none; 
 }
 
+/*搜索输入框样式*/
 #input_text {
 	width:565px; 
 	height:38px; 
@@ -67,6 +74,7 @@ body {
 	border-style: none;
 }
 
+/*搜索点击提交按钮*/
 .search {
 	margin-left:-12px;
 	border-radius: 0px;
@@ -76,6 +84,7 @@ body {
 	background-color: #00344B;
 }
 
+/*热门地点、推荐游记左边的矩形的样式*/
 .rectangle {
 	border-radius: 0px;
 	width: 20px;
@@ -85,9 +94,15 @@ body {
 	background-color: #00344B;
 }
 
+/*热门地点、推荐游记的a标签样式设置*/
 .word {
 	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+.addressLink {
+	text-decoration: none ;
+	color: #00344B !important;
 }
 
 .tab-h2 {
@@ -124,7 +139,6 @@ body {
 	width: 150px;
 }
 
-
 #footer {
 	background-color: #00344B;
 	border-top: 1px solid #ccc;
@@ -139,3 +153,18 @@ body {
 	font-family: "微软雅黑";
 	color: #FFF;
 }
+
+
+@media (max-width: 767px) {  
+	    /*在小于768像素的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+	    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 1200px) {  
+	    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+}  
+

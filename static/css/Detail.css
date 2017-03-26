@@ -1,0 +1,189 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav {
+	padding-top: 20px;
+}
+
+#myCarousel {
+	margin-bottom: 30px;
+	width: 100%;
+	height: 387px;
+	clear: both;
+	background-image:transparent;
+	
+}
+
+.navbar-brand img {
+	display: block;
+    margin-left: -25px;
+    margin-top: -16px;
+    height: 100px;
+}
+
+.BigPic {
+	float: left;
+	margin-left: 7%;
+}
+
+.BigPic img {
+	width: 515px;
+}
+
+.picGroup {
+	margin-top: 15px;
+}
+
+.picGroup img {
+	margin-right: 12px;
+	margin-bottom: 30px;
+	width:120px;
+}
+
+.title {
+	padding-top: 120px;
+	padding-bottom: 20px;
+	font-size: 26px;
+}
+
+.commentLogo {
+	float: right;
+	width: 100px;
+}
+
+.commentLogo img{
+	width: 90px;
+}
+
+.commentLogoButton {
+	border-radius: 0px;
+	box-shadow: none;
+	border-style: none;
+	background-color: #FFF;
+	color: #ffec4b;
+	margin-left: 50px;
+}
+
+.word {
+	float: right;
+	width:500px;
+	margin-right: 10%;
+	word-wrap:break-word; 
+	word-break:break-all; 
+}
+
+.word p {
+	text-indent:2em; 
+	line-height: 18px;
+	font-size: 16px;
+}
+
+.tag {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.tag button {
+	background-color: #969696;
+	color: #FFF;
+	width: 40px;
+	height: 20px;
+	border-radius:10px;
+	border-style: none;
+	margin-left: 5px;
+}
+
+.comment {
+	width: 750px;
+	margin-top: 50px;
+	clear: both;
+	margin: 0 auto;
+}
+
+.comment button {
+	background-color: #3f6678;
+	color: #b0bdc3;
+	font-family: "宋体";
+	font-size:16px;
+	border-radius: 0px;
+	border-style:none ;
+	margin:10px -7px 30px 0px;
+	width: 70px;
+	height: 50px;
+}
+
+.comment a:hover button {
+	background-color: #00344c;
+	color: #FFF;
+	font-family: "宋体";
+	font-size: 18px;
+	border-right: 1px solid #00344c;
+	border-radius: 0px;
+	border-style:none ;
+	box-shadow: 5px 5px 5px #0a7b9c1;
+	margin:10px -7px 30px 0px;
+	width: 80px;
+	height: 60px;
+	
+}
+
+.user img {
+	width: 50px;
+}
+
+.themore {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.themore button {
+	border-radius: 0px;
+	border-style:none ;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 120px;
+	height: 25px;
+	background-color:#969696 ;
+	color: #FFF;
+}
+#footer {
+	background-color: #00344B;
+	border-top: 1px solid #ccc;
+	padding: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font color: #FFF;
+}
+
+#footer p,#footer span{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #FFF;
+}
+#moreCommentLink {
+	color: #00344B;
+	width:800px;
+	margin: 0 auto;
+/*	padding-bottom: 20px;*/
+	text-align: center;
+}
+
+#commenIframe{
+	border: 0px;
+}
+
+@media (max-width: 767px) {  
+	    /*在小于768像素的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+	    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 1200px) {  
+	    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+}  

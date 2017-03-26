@@ -33,7 +33,7 @@ body {
 	padding-bottom: 40px;
 }
 
-.input_text {
+#input_text {
 	margin-top: 140px;
 	margin-left: 54%;
 	width:295px; 
@@ -96,4 +96,78 @@ body {
 	font-size: 18px;
 	font-family: "微软雅黑";
 	color: #FFF;
+}
+
+@media (max-width: 767px) {  
+	    /*在小于768像素的屏幕里,这里的样式才生效*/  
+	.input_text {
+		margin-top: 140px;
+		margin-left: 21%;
+		width:295px; 
+		height:30px; 
+		border-color:#00344B;
+	}
+	.hotArticles{
+		padding-top: 20px;
+		padding-left: 23..9%;
+		padding-bottom: 40px;
+	}   
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+    .input_text {
+		margin-top: 140px;
+		margin-left: 26%;
+		width:226px; 
+		height:30px; 
+		border-color:#00344B;
+	}
+	.hotArticles{
+		padding-top: 20px;
+		padding-left: 17.9%;
+		padding-bottom: 40px;
+	}
+	.pictures {
+		width: 700px;
+		margin-left: -50px;
+	}
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+	    /*在992和1199像素之间的屏幕里,这里的样式才生效*/
+	.input_text {
+		margin-top: 140px;
+		margin-left: 45%;
+		width:295px; 
+		height:30px; 
+		border-color:#00344B;
+	}
+	.hotArticles{
+		padding-top: 20px;
+		padding-left: 15.5%;
+		padding-bottom: 40px;
+	}
+}  
+@media (min-width: 1200px) {  
+	    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 1400px) {  
+	    /*在大于1400像素的屏幕里,这里的样式才生效*/  
+	.input_text {
+		margin-top: 140px;
+		margin-left: 45%;
+		width:295px; 
+		height:30px; 
+		border-color:#00344B;
+	}
+	.hotArticles{
+		padding-top: 20px;
+		padding-left: 22.2%;
+		padding-bottom: 40px;
+	}
+
+}  
+
+
+.noneDisplay{
+	display: none;
 }

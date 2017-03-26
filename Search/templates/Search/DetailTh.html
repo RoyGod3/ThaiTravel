@@ -1,11 +1,10 @@
-{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link type="text/css" rel="stylesheet" href="{% static 'css/Concrete.css' %}" />
-		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+		<link type="text/css" rel="stylesheet" href="css/Detail.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 		<style type="text/css">
 			body {
 				font-family:"楷体", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
@@ -20,13 +19,13 @@
 			<div class="container"> 
 				<!--泰好玩logo-->
 				<div class="navbar-header">
-					<a class="navbar-brand" style="padding-top: 5px;"><img  src="{% static 'img/logo.png' %}" style="height: 100px;"></a>
+					<a class="navbar-brand" style="padding-top: 5px;"><img  src="img/logo.png" style="height: 100px;"></a>
 				</div>	
 				<!--导航条的文字-->
 				<div class="collapse navbar-collapse" id="navbar_collapse">
 					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
 						<li >
-							<a href="../Search/home"><i class="glyphicon glyphicon-home"></i> 首页</a>
+							<a href="homePage.html"><i class="glyphicon glyphicon-home"></i> 首页</a>
 						</li>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
@@ -49,8 +48,7 @@
 				</div>			
 			</div>
 		</nav>
-		
-		
+			
 		<div class="article">
 			<center>
 			<p class="title" >初涉遊艇领域想选个岛？不来攀牙湾你真的亏大啦</p>
@@ -92,55 +90,39 @@
 			</div>
 			
 			<!--攀牙湾的图片-->
-			<div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="2000" data-pause="hover" data-wrap="false">
-				<div class="carousel-inner">
-					<div class="imgLeft">
-						<img src="{% static 'img/panyawanLeft.png' %}"/>
-					</div>
-					<div class="item active imgMid" >
-						<img src="{% static 'img/panyawanMid1.png' %}" />
-					</div>
-					<div class="item imgMid" >
-						<img src="{% static 'img/panyawanMid2.png' %}" />
-					</div>
-					<div class="item imgMid" >
-						<img src="{% static 'img/panyawanMid3.png' %}" />
-					</div>
-					<div class="imgRight">
-						<img src="{% static 'img/panyawanRight.png' %}">
+			<div class="pictures">
+				<div class="BigPic">
+					<img src="img/panyawanMid1.png"/>
+					<div class="picGroup">
+						<img src="img/panyawan1.png"  />
+						<img src="img/panyawan2.png"  />
+						<img src="img/panyawan3.png"  />
+						<img src="img/panyawan4.png"  />
 					</div>
 				</div>
-				<a href="#myCarousel" data-slide="prev" class="carousel-control left">
-					<img src="{% static 'img/iconDisosure1.png' %}" style="width: 100px;padding-top: 150px;"/>
-				</a>
-				<a href="#myCarousel" data-slide="next" class="carousel-control right">
-					<img src="{% static 'img/iconDisosure2.png' %}" style="width: 100px;padding-top: 150px"/>
-				</a>
-			</div>			
-		</div>
-		
-		<div class="word">
-			<p>攀牙湾位于普吉岛东北角75公里处，属于攀牙府，被誉为全岛风景最美丽的地方，有泰国的“小桂林”之称。</p> 
-    		<p>这里遍布着数以百计的形态奇特的石灰岩小岛，小岛的名称与其形状极为吻合。还有巧夺天工的钟乳石岩穴和数不清的怪石、海洞。其中007岛（也称铁钉岛）、钟乳岛石洞 （即佛庙洞和隐士洞）更以其天然奇景而名声在外。</p>
-    		<p>海湾內遍布珍贵的胎生植物红树林，红树林与小渔村之间有河道，坐在小船上观赏着红树林和小渔村，怡然自得。</p>
-			<div class="tag">
-				<button>美食</button>
-				<button>好玩</button>
-				<button>天堂</button>
 			</div>
-			<hr style="width: 800px;border:1px solid #7f99a5; margin-left: -25px;"/>
-		</div>
+			<div class="word">
+				<p>攀牙湾位于普吉岛东北角75公里处，属于攀牙府，被誉为全岛风景最美丽的地方，有泰国的“小桂林”之称。</p> 
+	    		<p>这里遍布着数以百计的形态奇特的石灰岩小岛，小岛的名称与其形状极为吻合。还有巧夺天工的钟乳石岩穴和数不清的怪石、海洞。其中007岛（也称铁钉岛）、钟乳岛石洞 （即佛庙洞和隐士洞）更以其天然奇景而名声在外。</p>
+	    		<p>海湾內遍布珍贵的胎生植物红树林，红树林与小渔村之间有河道，坐在小船上观赏着红树林和小渔村，怡然自得。</p>
+				<div class="tag">
+					<button>美食</button>
+					<button>好玩</button>
+					<button>天堂</button>
+				</div>			
+			</div>
 		
+		</div>
 		<div class="comment">
 			<div >
-				<a href="concretenessCh.html"><button style="border-right: 1px solid #b0bdc3;">中</button></a>
-				<a href="concretenessEn.html"><button style="border-right: 1px solid #b0bdc3;">英</button></a>
-				<a href="javascript:void(0);"><button >泰</button></a>
+				<a href="detailCh.html"><button style="border-right: 1px solid #b0bdc3;">中</button></a>
+				<a href="DetailEn.html"><button style="border-right: 1px solid #b0bdc3;">英</button></a>
+				<a href="#"><button >泰</button></a>
 			</div>
 			<div class="user">
 				<div class="media">
 					<div class="pull-left">
-						<img src="{% static 'img/Timg1.png' %}" class="img-circle">
+						<img src="img/Timg1.png" class="img-circle">
 					</div>
 					<div class="media-body">
 						<p>
@@ -153,7 +135,7 @@
 			<div class="user">
 				<div class="media">
 					<div class="pull-left">
-						<img src="{% static 'img/Zimg1.png' %}" class="img-circle">
+						<img src="img/Zimg1.png" class="img-circle">
 					</div>
 					<div class="media-body">
 						<p>
@@ -166,7 +148,7 @@
 			<div class="user">
 				<div class="media">
 					<div class="pull-left">
-						<img src="{% static 'img/Timg2.png' %}" class="img-circle">
+						<img src="img/Timg2.png" class="img-circle">
 					</div>
 					<div class="media-body">
 						<p>
@@ -179,7 +161,7 @@
 			<div class="user">
 				<div class="media">
 					<div class="pull-left">
-						<img src="{% static 'img/Yimg1.png' %}" class="img-circle">
+						<img src="img/Yimg1.png" class="img-circle">
 					</div>
 					<div class="media-body">
 						<p>
@@ -198,11 +180,11 @@
 		<footer id="footer">
 			<div class="container">
 				<p class="footer-p">关于我们 | 意见建议 | 其他问题</p>
-				<p>Natural Language Processing. <span class="footer-logo">TOURISM EVALUATION</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
+				<p>Natural Language Processing. <span class="footer-logo">泰好玩</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
 			</div>
 		</footer>
 
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
