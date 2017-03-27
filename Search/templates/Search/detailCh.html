@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script src="{% static 'js/jquery-3.2.0.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery-3.1.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
 		<script src="{% static 'js/detailCh.js' %}" type="text/javascript" charset="utf-8"></script>
 		<link type="text/css" rel="stylesheet" href="{% static 'css/Detail.css' %}" />
 		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
@@ -30,7 +30,7 @@
 				<div class="collapse navbar-collapse" id="navbar_collapse">
 					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
 						<li >
-							<a href="../search/home"><i class="glyphicon glyphicon-home"></i> 首页</a>
+							<a href="../home"><i class="glyphicon glyphicon-home"></i> 首页</a>
 						</li>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
@@ -125,7 +125,7 @@
 				<a><button id="thIframe" >泰</button></a>
 			</div>
 			
-			<iframe id="commenIframe" src="{% static 'iframe/detailCommentCh.html' %}" width="750px" height=""></iframe>
+			<iframe scrolling="no" id="commenIframe" src="{% static 'iframe/detailCommentCh.html' %}" width="750px" height=""></iframe>
 				
 			<!--<div class="user">
 				<div class="media">
@@ -265,7 +265,7 @@
 		</div>
 		
 		<div class="themore">
-			<button id="lookMore">查看更多</button>
+			<button id="lookMoreButton">查看更多</button>
 		</div>
 		
 		<!--有更多评论的时候被隐藏掉，再无更多评论的时候出现文字链接-->

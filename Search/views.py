@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 import logging
 import dbhelper
 import json
+import jieba.analyse
 logger = logging.getLogger('mylogger')
 
 # Create your views here.
@@ -13,6 +14,13 @@ def home(request):
     logger.info('home')
     return render(request, 'Search/homePage.html')
 
+def get_tag(comments):
+    for comment in comments:
+        content = comment['content']
+        key_words = jieba.analyse.extract_tags(content, topK = 10, withWeight = False,
+                                               allowPOS = ['a', 'n', 'nv', 'nr'], withFlag=True)
+        for k in key_words:
+            print k
 
 def search(request):
     db = dbhelper.DBHelper()
@@ -20,7 +28,7 @@ def search(request):
     index = 1
     if request.method == 'POST':
         search_word = request.POST['search_word']
-        return HttpResponseRedirect("?scene=" + search_word)
+        return HttpResponseRedirect("?scene=" + search_word + '&page=' + str(index))
     else:
         search_word = request.GET["scene"]
         index = request.REQUEST.get('page', '1')
@@ -64,3 +72,7 @@ def search(request):
         return HttpResponse('404 NOT FOUND!!')
     db.close()
 
+
+db = dbhelper.DBHelper()
+comments = db.get_scene_comments('皇陵')
+get_tag(comments)

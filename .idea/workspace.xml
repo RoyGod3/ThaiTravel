@@ -2,76 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8dddd06-9425-41dd-a699-d7699016f4fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawan1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawan2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawan3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/panyawan4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/Detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iframe/detailCommentCh.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iframe/detailCommentEn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iframe/detailCommentTh.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iframe/js/detailCommentCh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iframe/js/detailCommentEn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iframe/js/detailCommentTh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/detailCh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/homePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/hotSearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-3.2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/travelNote.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/detailCh.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessEn.html" afterPath="$PROJECT_DIR$/Search/templates/Search/DetailEn.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Search/templates/Search/concretenessTh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/DetailTh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Racha.jpg" afterPath="$PROJECT_DIR$/static/img/Racha.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Timg1.png" afterPath="$PROJECT_DIR$/static/img/Timg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Timg2.png" afterPath="$PROJECT_DIR$/static/img/Timg2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Yimg1.png" afterPath="$PROJECT_DIR$/static/img/Yimg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Yimg2.png" afterPath="$PROJECT_DIR$/static/img/Yimg2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Yimg3.png" afterPath="$PROJECT_DIR$/static/img/Yimg3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Zimg1.png" afterPath="$PROJECT_DIR$/static/img/Zimg1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/abstract.png" afterPath="$PROJECT_DIR$/static/img/abstract.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/church.jpg" afterPath="$PROJECT_DIR$/static/img/church.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/comment.png" afterPath="$PROJECT_DIR$/static/img/comment.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/heibaimiao.jpg" afterPath="$PROJECT_DIR$/static/img/heibaimiao.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/huangdidao.jpg" afterPath="$PROJECT_DIR$/static/img/huangdidao.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/iconDisosure1.png" afterPath="$PROJECT_DIR$/static/img/iconDisosure1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/iconDisosure2.png" afterPath="$PROJECT_DIR$/static/img/iconDisosure2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/lanmiao.jpg" afterPath="$PROJECT_DIR$/static/img/lanmiao.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/logo.png" afterPath="$PROJECT_DIR$/static/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/mangu.jpg" afterPath="$PROJECT_DIR$/static/img/mangu.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/museum.jpeg" afterPath="$PROJECT_DIR$/static/img/museum.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/panyawanMid1.png" afterPath="$PROJECT_DIR$/static/img/panyawanMid1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/panyawanMid2.png" afterPath="$PROJECT_DIR$/static/img/panyawanMid2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/panyawanMid3.png" afterPath="$PROJECT_DIR$/static/img/panyawanMid3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/panyawanleft.png" afterPath="$PROJECT_DIR$/static/img/panyawanleft.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/panyawanright.png" afterPath="$PROJECT_DIR$/static/img/panyawanright.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/qinglaiheibaimiao.jpg" afterPath="$PROJECT_DIR$/static/img/qinglaiheibaimiao.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/qingmai.jpeg" afterPath="$PROJECT_DIR$/static/img/qingmai.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/sea1.jpg" afterPath="$PROJECT_DIR$/static/img/sea1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/sea3.jpg" afterPath="$PROJECT_DIR$/static/img/sea3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/sea4.jpg" afterPath="$PROJECT_DIR$/static/img/sea4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/suoluoguangchang.jpg" afterPath="$PROJECT_DIR$/static/img/suoluoguangchang.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/turtle.jpg" afterPath="$PROJECT_DIR$/static/img/turtle.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/yufoshi.jpg" afterPath="$PROJECT_DIR$/static/img/yufoshi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/ThaiSegment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/translate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Search/ปาย-โป่งน้ำร้อน ปาย.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-3.1.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/thai_seg_model.pbtxt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/vec.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/Concrete.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/dbhelper.py" afterPath="$PROJECT_DIR$/Search/dbhelper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/detailCh.html" afterPath="$PROJECT_DIR$/Search/templates/Search/detailCh.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/homePage.html" afterPath="$PROJECT_DIR$/Search/templates/Search/homePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/templates/Search/sceneList.html" afterPath="$PROJECT_DIR$/Search/templates/Search/sceneList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Search/views.py" afterPath="$PROJECT_DIR$/Search/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Concrete.css" afterPath="$PROJECT_DIR$/static/css/Concrete.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Home.css" afterPath="$PROJECT_DIR$/static/css/Home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Detail.css" afterPath="$PROJECT_DIR$/static/css/Detail.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Note.css" afterPath="$PROJECT_DIR$/static/css/Note.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/Search.css" afterPath="$PROJECT_DIR$/static/css/Search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/iframe/detailCommentCh.html" afterPath="$PROJECT_DIR$/static/iframe/detailCommentCh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/iframe/detailCommentEn.html" afterPath="$PROJECT_DIR$/static/iframe/detailCommentEn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/iframe/detailCommentTh.html" afterPath="$PROJECT_DIR$/static/iframe/detailCommentTh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/iframe/js/detailCommentCh.js" afterPath="$PROJECT_DIR$/static/iframe/js/detailCommentCh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/iframe/js/detailCommentEn.js" afterPath="$PROJECT_DIR$/static/iframe/js/detailCommentEn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/iframe/js/detailCommentTh.js" afterPath="$PROJECT_DIR$/static/iframe/js/detailCommentTh.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/.metadata/.log" afterPath="$PROJECT_DIR$/static/img/.metadata/.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/npm.js" afterPath="$PROJECT_DIR$/static/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/detailCh.js" afterPath="$PROJECT_DIR$/static/js/detailCh.js" />
     </list>
     <ignored path="ThaiTravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,33 +44,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/views.py">
+      <file leaf-file-name="Detail.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/Detail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-              <folding>
-                <element signature="e#23#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detailCh.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/templates/Search/detailCh.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="66">
+              <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sceneList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Search/templates/Search/sceneList.html">
+      <file leaf-file-name="ThaiSegment.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Search/ThaiSegment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="-1029">
+              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailCommentCh.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/iframe/js/detailCommentCh.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1392">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -126,29 +77,31 @@
       <file leaf-file-name="detailCh.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/detailCh.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="57" column="93" selection-start-line="57" selection-start-column="93" selection-end-line="57" selection-end-column="93" />
+            <state relative-caret-position="114">
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
+      <file leaf-file-name="detailCh.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Search/templates/Search/detailCh.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4256">
-              <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+            <state relative-caret-position="-4104">
+              <caret line="6" column="50" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Search/dbhelper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="2014">
+              <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+              <folding>
+                <element signature="e#23#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,17 +132,24 @@
         <option value="$PROJECT_DIR$/ThaiTravel/urls.py" />
         <option value="$PROJECT_DIR$/Search/templates/Search/travelNote.html" />
         <option value="$PROJECT_DIR$/static/js/travelNote.js" />
-        <option value="$PROJECT_DIR$/Search/templates/Search/detailCh.html" />
-        <option value="$PROJECT_DIR$/Search/dbhelper.py" />
         <option value="$PROJECT_DIR$/Search/templates/Search/sceneList.html" />
+        <option value="$PROJECT_DIR$/static/css/Detail.css" />
+        <option value="$PROJECT_DIR$/static/css/Note.css" />
+        <option value="$PROJECT_DIR$/Search/dbhelper.py" />
         <option value="$PROJECT_DIR$/Search/views.py" />
+        <option value="$PROJECT_DIR$/Search/translate.py" />
+        <option value="$PROJECT_DIR$/Search/ThaiSegment.py" />
+        <option value="$PROJECT_DIR$/Search/templates/Search/detailCh.html" />
         <option value="$PROJECT_DIR$/static/js/detailCh.js" />
+        <option value="$PROJECT_DIR$/static/iframe/detailCommentCh.html" />
+        <option value="$PROJECT_DIR$/static/iframe/detailCommentTh.html" />
+        <option value="$PROJECT_DIR$/static/iframe/detailCommentEn.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="80" />
+    <option name="x" value="-6" />
+    <option name="y" value="52" />
     <option name="width" value="1841" />
     <option name="height" value="968" />
   </component>
@@ -218,8 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,6 +198,128 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iframe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iframe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThaiTravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -245,18 +327,21 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nlpPractice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kcws" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/resource" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/img" />
-      <recent name="$PROJECT_DIR$/static/css" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/Search/templates/Search" />
       <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/iframe" />
+      <recent name="$PROJECT_DIR$/Search" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/img" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dbhelper">
+  <component name="RunManager" selected="Python.ThaiSegment">
     <configuration default="false" name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,6 +372,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ThaiTravel" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Search/dbhelper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ThaiTravel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Search/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="translate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ThaiTravel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Search/translate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThaiSegment" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ThaiTravel" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Search/ThaiSegment.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -425,14 +561,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.utils" />
       <item index="1" class="java.lang.String" itemvalue="Python.dbhelper" />
+      <item index="2" class="java.lang.String" itemvalue="Python.views" />
+      <item index="3" class="java.lang.String" itemvalue="Python.translate" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ThaiSegment" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.dbhelper" />
-        <item index="1" class="java.lang.String" itemvalue="Python.utils" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.ThaiSegment" />
+        <item index="1" class="java.lang.String" itemvalue="Python.translate" />
+        <item index="2" class="java.lang.String" itemvalue="Python.views" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dbhelper" />
+        <item index="4" class="java.lang.String" itemvalue="Python.utils" />
       </list>
     </recent_temporary>
   </component>
@@ -496,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490294272346</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="search app coding">
+      <created>1490529259970</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490529259970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -509,26 +658,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="80" width="1841" height="968" extended-state="0" />
-    <editor active="false" />
+    <frame x="-6" y="52" width="1841" height="968" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1980198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29393306" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2248954" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23847926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24539171" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44769874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12970711" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -552,108 +701,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Search/dbhelper.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Search/ThaiSegment.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Search/dbhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/templates/Search/concretenessCh.html" />
-    <entry file="file://$PROJECT_DIR$/Search/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/dbhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3230">
-          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Search/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -759,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/MySQLdb/cursors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/MySQLdb/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -810,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/iframe/js/detailCommentCh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -831,73 +881,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Search/templates/Search/homePage.html">
+    <entry file="file://$PROJECT_DIR$/static/css/Note.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="418">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/travelNote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3914">
-          <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/Detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/templates/Search/detailCh.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Search/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="e#23#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/detailCh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="57" column="93" selection-start-line="57" selection-start-column="93" selection-end-line="57" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4256">
-          <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+        <state relative-caret-position="1178">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Search/templates/Search/sceneList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
+        <state relative-caret-position="636">
           <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/templates/Search/homePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1330">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/jieba/analyse/tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="74" column="73" selection-start-line="74" selection-start-column="73" selection-end-line="74" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/jieba/analyse/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/MySQLdb/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/translate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/resource/thai_seg_model.pbtxt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/resource/vec.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1014">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="e#23#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThaiTravel/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Search/dbhelper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="2014">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding>
+            <element signature="e#23#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/standard_ปาย-โป่งน้ำร้อน ปาย.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/ปาย-โป่งน้ำร้อน ปาย.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="76" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="228" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery-3.1.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/ThaiSegment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1029">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/Detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iframe/js/detailCommentCh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1392">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iframe/js/detailCommentEn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iframe/detailCommentEn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3099">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iframe/detailCommentTh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iframe/detailCommentCh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1389">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/detailCh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search/templates/Search/detailCh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4104">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="54" />
           <folding />
         </state>
       </provider>

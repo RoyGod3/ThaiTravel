@@ -9,7 +9,6 @@ class DBHelper:
         self.conn = MySQLdb.connect('localhost', 'root', '0719', 'ThaiTravel',
                                cursorclass = MySQLdb.cursors.DictCursor,
                                charset = 'utf8mb4')
-        # conn.set_character_set('utf8mb4')
         self.cur = self.conn.cursor()
 
     def check_word(self, word):
@@ -20,24 +19,7 @@ class DBHelper:
             return result[0]['ifset']
         else:
             return -1
-        # if result:
-        #     result = result[0]
-        # else:
-        #     return -1, []
-        # if result['ifset']:
-        #     indices = []
-        #     for i in result['indices'].split(','):
-        #         if i:
-        #             indices.append(int(i))
-        #     sql = "select * from chi_scene where id in (%s)"
-        #     indices_list = ', '.join((map(lambda x: '%s', indices)))
-        #     self.cur.execute(sql % indices_list, indices)
-        #     logger.info(type(indices[0]))
-        #     new_result = self.cur.fetchall()
-        #     # logger.info('new_result:' + str(len(new_result)))
-        #     return int(result['ifset']), new_result
-        # else:
-        #     return int(result['ifset']), result
+
 
     def get_scene_list(self, scene_name, index):
         sql = 'select indices from chi_scene where scene_name = %s' % '"' + scene_name + '"'
@@ -72,7 +54,7 @@ class DBHelper:
         sql = 'select user_name, head, content, title from chi_comments where id = %s'
         for i in indices:
             if i:
-                self.cur.execute(sql, int(i))
+                self.cur.execute(sql % int(i))
                 result = self.cur.fetchall()
                 if result:
                     result_set.append(result[0])
