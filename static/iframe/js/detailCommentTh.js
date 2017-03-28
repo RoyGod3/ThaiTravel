@@ -4,85 +4,83 @@ function flashHeight() {
 }
 
 $(function() {
+    var counter = 0; /*计数器*/
+    var pageStart = 0; /*offset*/
+    var pageSize = 5; /*size*/
+	var view = $(window.parent.document.getElementsByClassName("title")).text();
 	$(window.parent.document.getElementById("commenIframe")).height(0);
 	$(window.parent.document.getElementById("lookMoreButton")).fadeIn();
 	$(window.parent.document.getElementById("moreCommentLink")).fadeOut();
-	addSomeComment(commomJosnListTh);
-	var comment_numb = 5;
+    getData(view, pageStart, pageSize);
 	$(window.parent.document.getElementById("lookMoreButton")).click(function() {
-		if(commomJosnListTh.length > comment_numb-1) {
-			$(window.parent.document.getElementById("moreCommentLink")).hide();
-			addSomeComment(commomJosnListTh);
-		}else{
-			if(commomJosnListTh.length == 0){
-//				alert("再无更多内容，点击跳转到原网站");
-				$(window.parent.document.getElementById("moreCommentLink")).fadeIn();
-				$(window.parent.document.getElementById("lookMoreButton")).fadeOut();
-			}else{
-				$(window.parent.document.getElementById("lookMoreButton")).fadeOut();
-				$(window.parent.document.getElementById("moreCommentLink")).show();
-//				alert("再无更多内容，点击跳转到原网站");
-				addmoreComment(commomJosnListTh);
-			}
-			return;
-		}
+        counter ++;
+        pageStart = counter * pageSize;
+        getData(view, pageStart, pageSize);
 	})
 })
+function getData(view, index, pageSize) {
+    var u = '';
+    u = u+'/search/get_comments/?scene=' + view + '&offset=' + index.toString() + '&lang=thai';
+	$.ajax({
+		type: 'GET',
+		url: u,
+		dataType: 'json',
+		success: function(response){
+			var commentData = eval(response);
+			var sum = commentData.length;
+			if (sum < pageSize){
+				pageSize = sum;
+			}
+
+//			document.write(sum);
+			if (sum > pageSize - 1){
+                $(window.parent.document.getElementById("moreCommentLink")).hide();
+                addComments(commentData, pageSize);
+			}else{
+			    if(sum == 0) {
+                    $(window.parent.document.getElementById("moreCommentLink")).fadeIn();
+                    $(window.parent.document.getElementById("lookMoreButton")).fadeOut();
+ 			    }else{
+                    $(window.parent.document.getElementById("moreCommentLink")).show();
+                    addComments(commentData, pageSize);
+			    }
+			}
+
+		}
+	})
+
+}
 
 var commomJosn = {
-	userImg: "../img/Zimg1.png",
-	userName:"@jack",
+	userImg: "../img/Yimg3.png",
+	userName:"@粉团子PINK",
 	userLabel:"旅游达人",
-	commnet: "เราจ่ายเงินสำหรับเที่ยวแบบวันเดียวที่ฉัน และสามีของฉันบนนี้วันธรรมดาเข้าอุทยานแห่งชาติ มันเยี่ยมมาก! เรามีความสุขกับทุกส่วนของเรือการเดินทางนี้ ไม่สามารถจำชื่อบริษัททัวร์ แต่ชาวบ้าน ทัศนียภาพที่ดีออกจากถ้ำ สัตว์ป่าและน้ำทะเลสีฟ้า ดีจริง ๆ จ่าย 6000 บาทต่อคนต่อคืนพร้อมอาหาร 2 เราคิดว่าเป็นข้อตกลงที่ดี เพราะมันจะมีไกด์ของเราเองที่เราพายเรือคายัค"
+	commnet: "@粉团子PINK  泰国最有名的冬阴功汤，是以新鲜大虾煮成的酸辣汤，口味既辣又酸且甜，不仅用到了大量的咖喱，还要加入柠檬叶，香茅，辣椒等滋味独特的天然香料来调味，所以这道这道汤酸酸辣辣香香甜甜，可以说是五味俱全。"
 }
 
-var commomJosnListTh = [
-	{
-	userImg: "../img/Zimg1.png",
-	userName:"@jack",
-	userLabel:"旅游达人",
-	commnet: "เราจ่ายเงินสำหรับเที่ยวแบบวันเดียวที่ฉัน และสามีของฉันบนนี้วันธรรมดาเข้าอุทยานแห่งชาติ มันเยี่ยมมาก! เรามีความสุขกับทุกส่วนของเรือการเดินทางนี้ ไม่สามารถจำชื่อบริษัททัวร์ แต่ชาวบ้าน ทัศนียภาพที่ดีออกจากถ้ำ สัตว์ป่าและน้ำทะเลสีฟ้า ดีจริง ๆ จ่าย 6000 บาทต่อคนต่อคืนพร้อมอาหาร 2 เราคิดว่าเป็นข้อตกลงที่ดี เพราะมันจะมีไกด์ของเราเองที่เราพายเรือคายัค"
-},
-{
-	userImg: "../img/Zimg1.png",
-	userName:"@jack",
-	userLabel:"旅游达人",
-	commnet: "เราจ่ายเงินสำหรับเที่ยวแบบวันเดียวที่ฉัน และสามีของฉันบนนี้วันธรรมดาเข้าอุทยานแห่งชาติ มันเยี่ยมมาก! เรามีความสุขกับทุกส่วนของเรือการเดินทางนี้ ไม่สามารถจำชื่อบริษัททัวร์ แต่ชาวบ้าน ทัศนียภาพที่ดีออกจากถ้ำ สัตว์ป่าและน้ำทะเลสีฟ้า ดีจริง ๆ จ่าย 6000 บาทต่อคนต่อคืนพร้อมอาหาร 2 เราคิดว่าเป็นข้อตกลงที่ดี เพราะมันจะมีไกด์ของเราเองที่เราพายเรือคายัค"
-},
-{
-	userImg: "../img/Zimg1.png",
-	userName:"@jack",
-	userLabel:"旅游达人",
-	commnet: "เราจ่ายเงินสำหรับเที่ยวแบบวันเดียวที่ฉัน และสามีของฉันบนนี้วันธรรมดาเข้าอุทยานแห่งชาติ มันเยี่ยมมาก! เรามีความสุขกับทุกส่วนของเรือการเดินทางนี้ ไม่สามารถจำชื่อบริษัททัวร์ แต่ชาวบ้าน ทัศนียภาพที่ดีออกจากถ้ำ สัตว์ป่าและน้ำทะเลสีฟ้า ดีจริง ๆ จ่าย 6000 บาทต่อคนต่อคืนพร้อมอาหาร 2 เราคิดว่าเป็นข้อตกลงที่ดี เพราะมันจะมีไกด์ของเราเองที่เราพายเรือคายัค"
-},
-{
-	userImg: "../img/Zimg1.png",
-	userName:"@NANA",
-	userLabel:"旅游达人",
-	commnet: "เราจ่ายเงินสำหรับเที่ยวแบบวันเดียวที่ฉัน และสามีของฉันบนนี้วันธรรมดาเข้าอุทยานแห่งชาติ มันเยี่ยมมาก! เรามีความสุขกับทุกส่วนของเรือการเดินทางนี้ ไม่สามารถจำชื่อบริษัททัวร์ แต่ชาวบ้าน ทัศนียภาพที่ดีออกจากถ้ำ สัตว์ป่าและน้ำทะเลสีฟ้า ดีจริง ๆ จ่าย 6000 บาทต่อคนต่อคืนพร้อมอาหาร 2 เราคิดว่าเป็นข้อตกลงที่ดี เพราะมันจะมีไกด์ของเราเองที่เราพายเรือคายัค"
-}
 
-];
-//for(var i = 0; i < 5; i++) {
-//	commomJosnList.push(commomJosn);
+
+//function addSomeComment(commomJosnListCh) {
+//    comments = eval(commomJosnListCh);
+//	for(var i = 0; i < comments.length; i++) {
+//	    var json = eval('(' + comments[i] + ')');
+//		addAnComment(json);
+//	}
 //}
 
-function addSomeComment(commomJosnListTh) {
-	for(var i = 0; i < commomJosnListTh.length; i++) {
-		addAnComment(commomJosnListTh[i]);
-	}
-}
-
-function addAnComment(commomJosnTh) {
-	var str = '<div class="user"><div class="media"><div class="pull-left"><div class="ph_move"><img src="';
-	str = str + commomJosnTh["userImg"];
-	str = str + '" class="img-circle"></div><div id="user_name">';
-	str = str + commomJosnTh["userName"];
-	str = str + '</div><p class="level">&nbsp';
-	str = str + commomJosnTh["userLabel"];
-	str = str + '</p></div><div class="media-body"><p class="user_comment"><span class="user_comment">';
-	str = str + commomJosnTh["commnet"];
-	str = str + '</span></p></div></div></div><hr />';
-	document.getElementById("body").innerHTML = document.getElementById("body").innerHTML + str;
-	flashHeight();
+function addComments(commentData, pageSize) {
+		for (var i = 0; i < pageSize; i++){
+            var json = eval('(' + commentData[i] + ')');
+            var str = '<div class="user"><div class="media"><div class="pull-left"><div class="ph_move"><img src="';
+            str = str + json["head"];
+            str = str + '" class="img-circle"></div><div id="user_name">';
+            str = str + json["user_name"];
+            str = str + '</div><p class="level">&nbsp';
+            str = str + json["userLabel"];
+            str = str + '</p></div><div class="media-body"><p class="user_comment"><span class="user_comment">';
+            str = str + json["content"];
+            str = str + '</span></p></div></div></div><hr />';
+            document.getElementById("body").innerHTML = document.getElementById("body").innerHTML + str;
+            flashHeight();
+        }
 }

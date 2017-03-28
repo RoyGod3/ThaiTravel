@@ -4,21 +4,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script src="{% static 'js/jquery-3.1.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/jquery-3.2.0.min.js' %}" type="text/javascript" charset="utf-8"></script>
 		<script src="{% static 'js/detailCh.js' %}" type="text/javascript" charset="utf-8"></script>
 		<link type="text/css" rel="stylesheet" href="{% static 'css/Detail.css' %}" />
 		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
 		<script type="text/javascript">
 			window.onload = function(){
-				var fun = addArticle;
+				var fun1 = addArticle;
+				var fun2 = commentInit;
 				var article = {{ result_dict|safe }};
-				fun(article);
+				fun1(article);
+				fun2();
 			}
 		</script>
 	</head>
 	
 	<body>
-		
 		<!--基本导航条，包含标题和列表-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container"> 
@@ -30,7 +31,7 @@
 				<div class="collapse navbar-collapse" id="navbar_collapse">
 					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
 						<li >
-							<a href="../home"><i class="glyphicon glyphicon-home"></i> 首页</a>
+							<a href="../search/home"><i class="glyphicon glyphicon-home"></i> 首页</a>
 						</li>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
@@ -53,7 +54,6 @@
 				</div>			
 			</div>
 		</nav>
-		
 		<div id="article" >
 			<!--<center>
 			<p class="title" >初涉遊艇领域想选个岛？不来攀牙湾你真的亏大啦</p>
@@ -116,7 +116,6 @@
 			</div>
 		-->
 		</div>
-	
 		<div class="comment">
 			<hr style="width: 800px;border:1px solid #7f99a5; margin-left: -25px;"/>
 			<div >
@@ -124,7 +123,7 @@
 				<a><button id="enIframe" style="border-right: 1px solid #b0bdc3;">英</button></a>
 				<a><button id="thIframe" >泰</button></a>
 			</div>
-			
+			<div id="comments" style="display:None">{{comments}}</div>
 			<iframe scrolling="no" id="commenIframe" src="{% static 'iframe/detailCommentCh.html' %}" width="750px" height=""></iframe>
 				
 			<!--<div class="user">

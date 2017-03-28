@@ -1,15 +1,14 @@
-window.onload = function() {
+function commentInit() {
 	$("#chIframe").click(function() {
 		$("#commenIframe").attr("src", "/static/iframe/detailCommentCh.html");
 		document.getElementById("commenIframe");
 	});
 	$("#enIframe").click(function() {
-		$("#commenIframe").attr("src", "/static/iframe/detailCommentEn.html")
+		$("#commenIframe").attr("src", "/static/iframe/detailCommentEn.html");
 	});
 	$("#thIframe").click(function() {
-		$("#commenIframe").attr("src", "/static/iframe/detailCommentTh.html")
+		$("#commenIframe").attr("src", "/static/iframe/detailCommentTh.html");
 	});
-	addArticle(josnModle);
 }
 
 var imgGroup1 = ["img/panyawan1.png","img/panyawan3.png","img/panyawan2.png","img/panyawan4.png",];
@@ -74,13 +73,19 @@ function addArticle(josnModle) {
 	
 	str = str + '</div></div></div><div class="word"><p>';
 	str = str + josnModle["mainBody"];
-	
-	str = str + '</p><div class="tag"><button>';
-	str = str + josnModle["tag1"];
-	str = str + '</button><button>';
-	str = str + josnModle["tag2"];
-	str = str + '</button><button>';
-	str = str + josnModle["tag3"];
-	str = str + '</button></div></div>';
+
+	var tagMaxLength = 10;
+	if(josnModle["tagGroup"].length < tagMaxLength){
+	    tagMaxLength = josnModle["tagGroup"].length;
+	}
+
+	str = str + '</p><div class="tag">';
+	for (var i = 0; i < tagMaxLength; i++){
+	    str = str + '<button>'
+	    str = str + josnModle["tagGroup"][i];
+	    str = str + '</button>';
+	}
+	str = str + '</div></div>';
+
 	document.getElementById("article").innerHTML = document.getElementById("article").innerHTML + str;
 }

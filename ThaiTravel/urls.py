@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'search/home', search_view.home, name='search_home'),
     url(r'search/search', search_view.search, name='search_search'),
+    url(r'search/get_comments', search_view.get_scene_comments, name='search_get_comments'),
     # url(r'^hello/', search_view.hello, name='search_hello'),
     url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_URL}),
 ]
