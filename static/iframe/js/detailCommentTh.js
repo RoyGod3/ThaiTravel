@@ -26,25 +26,32 @@ function getData(view, index, pageSize) {
 		url: u,
 		dataType: 'json',
 		success: function(response){
-			var commentData = eval(response);
-			var sum = commentData.length;
+			var result_dict = eval(response);
+			var sum = result_dict['comments'].length;
 			if (sum < pageSize){
 				pageSize = sum;
+				$(window.parent.document.getElementById("lookMoreButton")).fadeOut();
+				$(window.parent.document.getElementById("moreCommentLink")).fadeIn();
+				var str = '<a href="';
+				str = str + result_dict['url'].url
+				str = str + '" >再无更多内容，点击跳转到原网站</a>';
+                window.parent.document.getElementById("moreCommentLink").innerHTML = str;
 			}
+			addComments(result_dict['comments'], pageSize);
 
 //			document.write(sum);
-			if (sum > pageSize - 1){
-                $(window.parent.document.getElementById("moreCommentLink")).hide();
-                addComments(commentData, pageSize);
-			}else{
-			    if(sum == 0) {
-                    $(window.parent.document.getElementById("moreCommentLink")).fadeIn();
-                    $(window.parent.document.getElementById("lookMoreButton")).fadeOut();
- 			    }else{
-                    $(window.parent.document.getElementById("moreCommentLink")).show();
-                    addComments(commentData, pageSize);
-			    }
-			}
+//			if (sum > pageSize - 1){
+//                $(window.parent.document.getElementById("moreCommentLink")).hide();
+//                addComments(commentData, pageSize);
+//			}else{
+//			    if(sum == 0) {
+//                    $(window.parent.document.getElementById("moreCommentLink")).fadeIn();
+//                    $(window.parent.document.getElementById("lookMoreButton")).fadeOut();
+// 			    }else{
+//                    $(window.parent.document.getElementById("moreCommentLink")).show();
+//                    addComments(commentData, pageSize);
+//			    }
+//			}
 
 		}
 	})

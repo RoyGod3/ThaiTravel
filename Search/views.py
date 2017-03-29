@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 import logging
 import dbhelper
 import json
+import re
 import jieba.analyse
 import thaisegment
 logger = logging.getLogger('mylogger')
@@ -18,9 +19,27 @@ def home(request):
 def get_tag(scene_name):
     db = dbhelper.DBHelper()
     all_tag = []
-    all_tag += get_chi_tag(db.get_scene_comments(scene_name, -1, 'chi'))
-    all_tag += thaisegment.extract_tags(db.get_scene_comments(scene_name, -1, 'thai'))
+    comments = db.get_scene_comments(scene_name, -1, 'chi')['comments']
+    all_tag += get_chi_tag(comments)
+    comments = db.get_scene_comments(scene_name, -1, 'thai')['comments']
+    all_tag += thaisegment.extract_tags(comments)
     return all_tag
+
+def check_search_word(search_word):
+    pattern = '[^\u4e00-\u9fa5]'
+    match = re.search(pattern, search_word)
+    if match:
+        return 'chi'
+    pattern = '^[a-zA-Z]+$'
+    match = re.search(pattern, search_word)
+    if match:
+        return 'eng'
+    pattern = '^\u0E00-\u0E7F]'
+    match = re.search(pattern, search_word)
+    if match:
+        return 'thai'
+    return 'chi'
+
 
 def get_chi_tag(comments):
     dict = {}
@@ -45,7 +64,7 @@ def get_scene_comments(request):
     if request.method == 'GET':
         scene_name = request.GET["scene"]
         offset = request.REQUEST.get('offset', '0')
-        lang = request.REQUEST.get('lang', 'ch')
+        lang = request.REQUEST.get('lang', 'chi')
     comments = db.get_scene_comments(scene_name, int(offset), lang)
     return HttpResponse(json.dumps(comments), content_type='application/json')
 
@@ -59,7 +78,8 @@ def search(request):
     else:
         search_word = request.GET["scene"]
         index = request.REQUEST.get('page', '1')
-    status = db.check_word(search_word)
+    lang = check_search_word(search_word)
+    status, search_word = db.check_word(search_word, lang)
     if status == 1:
         results, max_page = db.get_scene_list(search_word, int(index))
         pictureContent = []
@@ -69,6 +89,7 @@ def search(request):
             content['titleSrc'] = '../search/search?scene=' + result['scene_name']
             content['titleText'] = result['scene_name']
             scores = db.get_score(result['scene_name'])
+            logger.info(scores['score'])
             scores = scores['score'].split(',')
             content['ch'] = scores[0] if scores[0] else 0
             content['en'] = scores[1] if scores[1] else 0

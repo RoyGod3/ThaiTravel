@@ -13,17 +13,35 @@ class DBHelper:
         self.cur = self.conn.cursor()
 
     #
-    def check_word(self, word):
+    def check_word(self, word, lang):
+        if lang != 'chi':
+            location = lang + '_location'
+            sql = 'select chi_location from location_set where ' + location + ' = %s' % + '"' + word + '"'
+            self.cur.execute(sql)
+            result = self.cur.fetchall()
+            if result:
+                word = result[0]['chi_location']
+            else:
+                return -1
         sql = 'select ifset from chi_scene where scene_name = %s' % '"' + word  + '"'
         self.cur.execute(sql)
         result = self.cur.fetchall()
         if result:
-            return result[0]['ifset']
+            return result[0]['ifset'], word
         else:
             return -1
 
 
     def get_scene_list(self, scene_name, index):
+        # if lang != 'chi':
+        #     location = lang + '_location'
+        #     sql = 'select chi_location from location_set where ' + location + ' = %s' % + '"' + scene_name + '"'
+        #     self.cur.execute(sql)
+        #     result = self.cur.fetchall()
+        #     if result:
+        #         scene_name = result[0]['chi_location']
+        #     else:
+        #         return None
         sql = 'select indices from chi_scene where scene_name = %s' % '"' + scene_name + '"'
         self.cur.execute(sql)
         result = self.cur.fetchall()
@@ -62,6 +80,7 @@ class DBHelper:
 
     def get_scene_comments(self, scene_name, num, lang):
         table = lang + "_scene"
+        result_dict = {}
         if lang != 'chi':
             sql = 'select %s from location_set where chi_location=%s' % (lang+'_location', '"' + scene_name + '"')
             self.cur.execute(sql)
@@ -70,6 +89,7 @@ class DBHelper:
                 return
             else:
                 scene_name = result[0][lang+'_location']
+        logger.info(scene_name)
         sql = 'select indices from %s where scene_name = %s' % (table, '"' + scene_name + '"')
         self.cur.execute(sql)
         result = self.cur.fetchall()
@@ -90,7 +110,15 @@ class DBHelper:
                 result = self.cur.fetchall()
                 if result:
                     result_set.append(self.compute_user_level(result[0]))
-        return result_set
+        if last == len(indices):
+            sql = 'select url from %s where id = %s'
+            self.cur.execute(sql % ( lang+"_comments", indices[0]))
+            result = self.cur.fetchall()
+            if result:
+                logger.info(result[0])
+                result_dict['url'] = result[0]
+        result_dict['comments'] = result_set
+        return result_dict
 
 
 
