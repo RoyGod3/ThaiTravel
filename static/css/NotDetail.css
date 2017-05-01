@@ -1,0 +1,157 @@
+body {
+	font-family:"楷体", "微软雅黑", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*调节导航条与页面头部的位置*/
+.navbar-nav { 
+	padding-top: 20px;
+}
+
+/*轮播图片的div框架与导航条的距离*/
+#myCarousel { 
+	margin-top: 70px;
+}
+/*导航条的图片*/
+.navbar-brand img {
+	display: block;
+    margin-left: -25px;
+    margin-top: -16px;
+    height: 100px;
+}
+
+#wordContent {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+#wordContent .head {
+	clear: both;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.head .title {
+	margin-top: 100px;
+	margin-bottom: 5px;
+	font-size: 25px;
+	font color: #00344B;
+	word-wrap: break-word;
+}
+
+.head .author {
+	color: #CCCCCC;
+	font-size: 15px;
+	margin-bottom: 50px;
+}
+
+#wordContent .date {
+	width: 300px;
+	margin-left: 150px;
+}
+
+.tagSize {
+	font-size: 20px;
+	margin-left: -20px;
+}
+
+.date .fengexian {
+	width: 700px;
+	border: none;
+	margin-left: -30px;
+	border-bottom: 1px dotted #00344B !important;
+}
+
+.picComment {
+	width: 640px;
+	margin-top: 10px;
+	padding-bottom: 40px;
+	font-size: 17px;
+	color: #00344B;
+	word-wrap:break-word;
+	word-break:break-all;
+	display: inline-block;
+}
+
+.beWriteImg {
+	width: 640px;
+	height:480px;
+}
+
+.commentPicSizeLeft {
+	width: 30px !important;
+	height: 22px !important;
+}
+
+.commentPicSizeRight {
+	width: 30px !important;
+	height: 22px !important;
+	position: absolute;
+	right:10px;
+}
+
+.addressText {
+
+	width: 350px;
+	margin-left: 20px;
+	margin-top:20px;
+	line-height: 2em;
+	font-size: 15px;
+	color: #000000;
+}
+
+.node {
+	width: 200px;
+	margin-left: 870px;
+	margin-top: 10px;
+}
+
+.nodeTag {
+	color: #CCCCCC;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.node .word p {
+	margin-left: 20px;
+	padding: 0px;
+	font-size: 12px !important;
+	color: #000000;
+	line-height: 1em;
+}
+
+ .picAndComment {
+margin:0 auto;
+	width: 640px;
+	float: left;
+}
+ .addressComment {
+	width: 450px;
+/*	margin-top: -480px;*/
+    margin:0 auto;
+	position: relative;
+
+}
+
+
+#footer {
+	margin-top: 20px;
+	background-color: #00344B;
+	border-top: 1px solid #ccc;
+	padding: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+	font color: #FFF;
+	clear: both;
+}
+
+#footer p,#footer span{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #FFF;
+}

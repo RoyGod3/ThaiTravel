@@ -5,6 +5,8 @@ import md5
 import urllib
 import random
 import json
+import logging
+logger = logging.getLogger('mylogger')
 
 appid = '20161119000032190'
 secretKey = 'DZHf9Aq9ggWqHaYT7e_w'
@@ -39,4 +41,4 @@ def translate(word):
         if httpClient:
             httpClient.close()
 
-translate('apple')
+# translate('apple')

@@ -17,11 +17,11 @@ $(document).ready(function(){
 //换页按钮的页码设置
 function init(allScene, maxPage) {
 	var pageNow = -1;
-	var maxPage = parseInt(maxPage)
-	if(parseInt(allScene.length / 10) == (allScene.length / 10)){
-	    maxPage = allScene.length;
+	if(parseInt(maxPage / 10) == (maxPage / 10)){
+	    maxPage = parseInt(maxPage / 10);
+	    console.log(maxPage);
 	}else{
-	    maxPage = parseInt(allScene.length / 10) + 1
+	    maxPage = parseInt(maxPage / 10) + 1
 	}
 	if(window.location.href.split("page=")[1] == null){
 		pageNow = 1;
@@ -53,7 +53,6 @@ function init(allScene, maxPage) {
 		document.getElementById("pageNum3").innerText = 3;
 		document.getElementById("pageNum3").onclick = function() {
 			window.location.href = window.location.href.replace(/page=\d*/, "page=3");
-			alert(window.location.href)
 		}
 	} else {
 		document.getElementById("pageNum1").innerText = pageNow - 1;
@@ -91,6 +90,7 @@ function init(allScene, maxPage) {
 	    window.location.href = window.location.href.replace(/page=\d*/, "page=") + (maxPage);
 	}
     for(var i = 0; i < 10; i++){
+
 	    var json = eval('(' + allScene[i] + ')');
 		addOneNote(json);
 	}

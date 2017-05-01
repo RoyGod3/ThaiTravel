@@ -20,8 +20,10 @@ $(function() {
 	})
 })
 function getData(view, index, pageSize) {
+//    console.log(view);
     var u = '';
     u = u+'/search/get_comments/?scene=' + view + '&offset=' + index.toString() + '&lang=chi';
+    console.log(u);
 	$.ajax({
 		type: 'GET',
 		url: u,

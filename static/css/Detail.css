@@ -216,4 +216,14 @@
 }  
 @media (min-width: 1200px) {  
 	    /*在大于1200像素的屏幕里,这里的样式才生效*/  
-}  
+}
+
+.translation {
+	/*display: none;*/
+	background-color: #00344B;
+	color: #FFF;
+	font-size: 10px;
+	border-radius: 0px;
+	border-style:none ;
+	outline:none;
+}

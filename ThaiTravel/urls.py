@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from Search import views as search_view
+from Discover import views as discover_view
 import settings
 
 urlpatterns = [
@@ -23,6 +24,12 @@ urlpatterns = [
     url(r'search/home', search_view.home, name='search_home'),
     url(r'search/search', search_view.search, name='search_search'),
     url(r'search/get_comments', search_view.get_scene_comments, name='search_get_comments'),
+    url(r'search/get_scene_list', search_view.get_scene_list, name='search_get_scene_list'),
+    url(r'search/hotsearch', search_view.hot_search, name='hot_search'),
+    url(r'discover/get_travel_note_list', discover_view.get_travel_note_list, name='travel_note_list'),
+    # url(r'discover/travelnote', discover_view.to_travel_note, name='travel_note'),
+    url(r'discover/get_travel_note', discover_view.get_travel_note, name='get_travel_note'),
+    url(r'search/get_translate', search_view.get_translation, name='get_translation'),
     # url(r'^hello/', search_view.hello, name='search_hello'),
     url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_URL}),
 ]

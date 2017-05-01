@@ -17,6 +17,7 @@ $(function() {
         pageStart = counter * pageSize;
         getData(view, pageStart, pageSize);
 	})
+
 })
 function getData(view, index, pageSize) {
     var u = '';
@@ -37,21 +38,9 @@ function getData(view, index, pageSize) {
 				str = str + '" >再无更多内容，点击跳转到原网站</a>';
                 window.parent.document.getElementById("moreCommentLink").innerHTML = str;
 			}
-			addComments(result_dict['comments'], pageSize);
+			addComments(result_dict['comments'], pageSize, index, view);
 
-//			document.write(sum);
-//			if (sum > pageSize - 1){
-//                $(window.parent.document.getElementById("moreCommentLink")).hide();
-//                addComments(commentData, pageSize);
-//			}else{
-//			    if(sum == 0) {
-//                    $(window.parent.document.getElementById("moreCommentLink")).fadeIn();
-//                    $(window.parent.document.getElementById("lookMoreButton")).fadeOut();
-// 			    }else{
-//                    $(window.parent.document.getElementById("moreCommentLink")).show();
-//                    addComments(commentData, pageSize);
-//			    }
-//			}
+
 
 		}
 	})
@@ -67,16 +56,36 @@ var commomJosn = {
 
 
 
-//function addSomeComment(commomJosnListCh) {
-//    comments = eval(commomJosnListCh);
-//	for(var i = 0; i < comments.length; i++) {
-//	    var json = eval('(' + comments[i] + ')');
-//		addAnComment(json);
-//	}
-//}
+function getTranslation(view, index) {
+    var u = '/search/get_translate?scene_name=' + view + '&index=' + index.toString() + '&lang=thai';
+    console.log(u);
+    $.ajax({
+        type: "get",
+        url: u,
+        datatype: 'json',
+        success: function (response) {
+            console.log(response);
+            var resultJson = eval('('+response+')');
+            var str = '<div class="user"><div class="media"><div class="pull-left"><div class="ph_move"><img src="';
+            str = str + resultJson["head"];
+            str = str + '" class="img-circle"></div><div id="user_name">';
+            str = str + resultJson["user_name"];
+            str = str + '</div><p class="level">&nbsp';
+            str = str + resultJson["userLabel"];
+            str = str + '</p></div><div class="media-body"><p class="user_comment"><span class="user_comment">';
+            str = str + resultJson["content"];
+            str = str + '</span></p></div></div></div><hr />';
+            var buttonId = 'translation'+String(index)
+            console.log(buttonId);
+            document.getElementById(buttonId).innerHTML = str;
+            flashHeight();
+        }
+    })
+}
 
-function addComments(commentData, pageSize) {
+function addComments(commentData, pageSize, index, view) {
 		for (var i = 0; i < pageSize; i++){
+		    var buttonId = 'translation'+String(index*pageSize+i)
             var json = eval('(' + commentData[i] + ')');
             var str = '<div class="user"><div class="media"><div class="pull-left"><div class="ph_move"><img src="';
             str = str + json["head"];
@@ -86,8 +95,23 @@ function addComments(commentData, pageSize) {
             str = str + json["userLabel"];
             str = str + '</p></div><div class="media-body"><p class="user_comment"><span class="user_comment">';
             str = str + json["content"];
+            str = str + '<button id="' + buttonId + '">翻译</button>';
             str = str + '</span></p></div></div></div><hr />';
             document.getElementById("body").innerHTML = document.getElementById("body").innerHTML + str;
             flashHeight();
         }
+        var j = 0;
+        !function(j){
+        for (; j < pageSize; j++){
+            var num = index*pageSize+j;
+            var button_name = 'translation'+String(num);
+            console.log(button_name);
+            document.getElementById(button_name).onclick = function () {
+                console.log(num);
+                getTranslation(view, num);
+            }
+        }
+        }(j);
+
+
 }

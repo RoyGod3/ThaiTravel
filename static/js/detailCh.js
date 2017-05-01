@@ -30,34 +30,35 @@ var josnModle = {
 
 //动态加载数据，最后的str即为原本页面呈现的静态html代码
 function addArticle(josnModle) {
-	var str = '<center><p class="title" >';
+    console.log(josnModle);
+    var str = '<center><p class="title" >';
 	str = str + josnModle["title"];
-	str = str + '</p></center><div class="commentLogo"><img src="/static/img/comment.png"><div class="btn-group"><button type="button" class="dropdown-toggle commentLogoButton" data-toggle="dropdown">';
+	str = str + '</p ></center><div class="commentLogo"><img src="/static/img/comment.png"><div class="btn-group"><button type="button" class="dropdown-toggle commentLogoButton" data-toggle="dropdown">';
 	//加载总评评论星星
 	for(var i = 0; i < josnModle["totalEva"]; i++) {
 		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
 	}
-	
-	str = str + '</button><ul class="dropdown-menu pull-right" role="menu" style="color: #ffec4b;"><li ><span style="color:#00344B ;">中:</span>';	
+
+	str = str + '</button><ul class="dropdown-menu pull-right" role="menu" style="color: #ffec4b;"><li ><span style="color:#00344B ;">中:</span>';
 	//加载中国评论星星
 	for(var i = 0; i < josnModle["chEva"]; i++) {
 		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
 	}
-	
+
 	str = str + '</br></li><li><span style="color:#00344B ;">英:</span>';
 	//加载英语国家评论星星
 	for(var i = 0; i < josnModle["enEva"]; i++) {
 		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
 	}
-	
-	str = str + '</li><li><span style="color:#00344B ;">泰:</span>';	
+
+	str = str + '</li><li><span style="color:#00344B ;">泰:</span>';
 	//加载泰语评论星星
 	for(var i = 0; i < josnModle["thEva"]; i++) {
 		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
 	}
 	str = str + '</li></ul></div></div><div class="pictures"><div class="BigPic"><img src="';
 	str = str + josnModle["BigPic"];
-	
+
 	str = str + '"/><div class="picGroup">';
 	var imgMaxLength = 4;
 	if(josnModle["imgGroup"].length < imgMaxLength ) {
@@ -70,22 +71,74 @@ function addArticle(josnModle) {
 		str = str + josnModle["imgGroup"][i];
 		str = str + '"  />';
 	}
-	
+
 	str = str + '</div></div></div><div class="word"><p>';
 	str = str + josnModle["mainBody"];
 
-	var tagMaxLength = 10;
-	if(josnModle["tagGroup"].length < tagMaxLength){
-	    tagMaxLength = josnModle["tagGroup"].length;
-	}
-
-	str = str + '</p><div class="tag">';
-	for (var i = 0; i < tagMaxLength; i++){
-	    str = str + '<button>'
-	    str = str + josnModle["tagGroup"][i];
-	    str = str + '</button>';
+	str = str + '</p ><div class="tag">';
+	for(var i=0;i<josnModle["tagGroup"].length;i++) {
+		str = str + '<button>';
+		str = str + josnModle["tagGroup"][i];
+		str = str + '</button>';
 	}
 	str = str + '</div></div>';
-
 	document.getElementById("article").innerHTML = document.getElementById("article").innerHTML + str;
+//	var str = '<center><p class="title" >';
+//	str = str + josnModle["title"];
+//	str = str + '</p></center><div class="commentLogo"><img src="/static/img/comment.png"><div class="btn-group"><button type="button" class="dropdown-toggle commentLogoButton" data-toggle="dropdown">';
+//	//加载总评评论星星
+//	for(var i = 0; i < josnModle["totalEva"]; i++) {
+//		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
+//	}
+//
+//	str = str + '</button><ul class="dropdown-menu pull-right" role="menu" style="color: #ffec4b;"><li ><span style="color:#00344B ;">中:</span>';
+//	//加载中国评论星星
+//	for(var i = 0; i < josnModle["chEva"]; i++) {
+//		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
+//	}
+//
+//	str = str + '</br></li><li><span style="color:#00344B ;">英:</span>';
+//	//加载英语国家评论星星
+//	for(var i = 0; i < josnModle["enEva"]; i++) {
+//		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
+//	}
+//
+//	str = str + '</li><li><span style="color:#00344B ;">泰:</span>';
+//	//加载泰语评论星星
+//	for(var i = 0; i < josnModle["thEva"]; i++) {
+//		str = str + '<span class="glyphicon glyphicon-star" style="width: 4px;"></span>&nbsp;';
+//	}
+//	str = str + '</li></ul></div></div><div class="pictures"><div class="BigPic"><img src="';
+//	str = str + josnModle["BigPic"];
+//
+//	str = str + '"/><div class="picGroup">';
+//	var imgMaxLength = 4;
+//	if(josnModle["imgGroup"].length < imgMaxLength ) {
+//		imgMaxLength = josnModle["imgGroup"].length;
+//	}else {
+//		imgMaxLength = 4;
+//	}
+//	for(var i = 0; i < imgMaxLength;i++) {
+//		str = str + '<img src="';
+//		str = str + josnModle["imgGroup"][i];
+//		str = str + '"  />';
+//	}
+//
+//	str = str + '</div></div></div><div class="word"><p>';
+//	str = str + josnModle["mainBody"];
+//
+//	var tagMaxLength = 10;
+//	if(josnModle["tagGroup"].length < tagMaxLength){
+//	    tagMaxLength = josnModle["tagGroup"].length;
+//	}
+//
+//	str = str + '</p><div class="tag">';
+//	for (var i = 0; i < tagMaxLength; i++){
+//	    str = str + '<button>'
+//	    str = str + josnModle["tagGroup"][i];
+//	    str = str + '</button>';
+//	}
+//	str = str + '</div></div>';
+//
+//	document.getElementById("article").innerHTML = document.getElementById("article").innerHTML + str;
 }

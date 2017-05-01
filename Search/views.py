@@ -1,29 +1,69 @@
 # -*- coding:utf-8 -*-
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, HttpResponseRedirect
 import logging
 import dbhelper
 import json
 import re
 import jieba.analyse
+import nltk
 import thaisegment
+import engsegment
 logger = logging.getLogger('mylogger')
 
 # Create your views here.
 
-
+#主页
+@csrf_exempt
 def home(request):
-    logger.info('home')
-    return render(request, 'Search/homePage.html')
+    db = None
+    try:
+        if request.method == 'POST':
+            db = dbhelper.DBHelper()
+            result_dict = {}
+            result_dict['hot_search_word'] = ['曼谷','芭提雅','清迈']
+            location_results = db.get_hot_search(1, 4)
+            hot_locations = []
+            for result in location_results:
+                content = {}
+                content['piciture'] = None if result['picture'] == None else result['picture'].split(';')[0]
+                content['scene_name'] = result['scene_name']
+                scores = db.get_score(result['scene_name'])
+                logger.info(scores['score'])
+                scores = scores['score'].split(',')
+                content['chi_score'] = scores[0] if scores[0] else 0
+                content['eng_score'] = scores[1] if scores[1] else 0
+                content['thai_score'] = scores[2] if scores[2] else 0
+                hot_locations.append(content)
+            result_dict['hot_location'] = hot_locations
+            travel_note_results = db.get_notes_list(1, 4)
+            result_dict['recommend_travel_notes'] = travel_note_results
+            return HttpResponse(json.dumps(result_dict))
+        else:
+            raise Exception()
+    except Exception as e:
+        print e.message
+        return HttpResponse('404 Not Found!!')
 
+
+#获得中泰英key words
 def get_tag(scene_name):
-    db = dbhelper.DBHelper()
-    all_tag = []
-    comments = db.get_scene_comments(scene_name, -1, 'chi')['comments']
-    all_tag += get_chi_tag(comments)
-    comments = db.get_scene_comments(scene_name, -1, 'thai')['comments']
-    all_tag += thaisegment.extract_tags(comments)
-    return all_tag
+    db = None
+    try:
+        db = dbhelper.DBHelper()
+        all_tag = []
+        comments = db.get_scene_comments(scene_name, -1, 'chi')['comments']
+        all_tag += get_chi_tag(comments)
+        comments = db.get_scene_comments(scene_name, -1, 'thai')['comments']
+        all_tag += thaisegment.extract_tags(comments)
+        comments = db.get_scene_comments(scene_name, -1, 'eng')['comments']
+        all_tag += engsegment.extract_tags(comments)
+        return all_tag
+    except Exception as e:
+        logger.error(e.message)
+    finally:
+        db.close()
 
 def check_search_word(search_word):
     pattern = '[^\u4e00-\u9fa5]'
@@ -40,6 +80,9 @@ def check_search_word(search_word):
         return 'thai'
     return 'chi'
 
+def get_eng_tag(comments):
+    for comment in comments:
+        words = nltk.word_tokenize(comment)
 
 def get_chi_tag(comments):
     dict = {}
@@ -58,83 +101,156 @@ def get_chi_tag(comments):
     return result
 
 
-
+'''
+获取评论，参数为景点名，偏移量和语言
+'''
 def get_scene_comments(request):
     db = dbhelper.DBHelper()
-    if request.method == 'GET':
-        scene_name = request.GET["scene"]
-        offset = request.REQUEST.get('offset', '0')
-        lang = request.REQUEST.get('lang', 'chi')
-    comments = db.get_scene_comments(scene_name, int(offset), lang)
-    return HttpResponse(json.dumps(comments), content_type='application/json')
+    try:
+        scene_name = ''
+        if request.method == 'GET':
+            scene_name = request.GET["scene"]
+            offset = request.REQUEST.get('offset', '0')
+            lang = request.REQUEST.get('lang', 'chi')
+        comments = db.get_scene_comments(scene_name, int(offset), lang)
+        return HttpResponse(json.dumps(comments), content_type='application/json')
+    except Exception as e:
+        return HttpResponse('404 NOT FOUND!!')
+    finally:
+        db.close()
 
+'''
+搜索方法，使用GET获取search_word;
+如果搜索为小景点，返回小景点内容;
+如果搜索为大景点，返回大景点内容
+'''
 def search(request):
+    #数据库
     db = dbhelper.DBHelper()
+    #搜索词
     search_word = None
-    index = 1
-    if request.method == 'POST':
-        search_word = request.POST['search_word']
-        return HttpResponseRedirect("?scene=" + search_word + '&page=' + str(index))
-    else:
-        search_word = request.GET["scene"]
-        index = request.REQUEST.get('page', '1')
-    lang = check_search_word(search_word)
-    status, search_word = db.check_word(search_word, lang)
-    if status == 1:
-        results, max_page = db.get_scene_list(search_word, int(index))
-        pictureContent = []
+    try:
+        if request.method == 'GET':
+            search_word = request.GET['search_word']
+        if not search_word:
+            raise Exception()
+        #检查search_word的语言类型，分别为chi,eng,thai
+        lang = check_search_word(search_word)
+        #将搜索词转换为中文，且检查该景点是否存在，是否是大小景点。
+        # 1为大景点，0为小景点，-1为找不到
+        status, search_word = db.check_word(search_word, lang)
+        result = {}
+        if status == 1:
+            temp_result = db.get_big_scene_content(search_word)
+            result['scene_name'] = temp_result['scene_name']
+            if temp_result['picture']:
+                result['picture'] = temp_result['picture'].split(';')
+            result['introduction'] = temp_result['introduction']
+            result['scene_num'] = len(temp_result['indices'])
+            result['recommend_scene'] = temp_result['recommend_scene']
+            return HttpResponse(json.dumps(result))
+        elif status == 0:
+            temp_result = db.get_small_scene_content(search_word)
+            temp_result['picture'] = temp_result['picture'].split(';')
+
+            return HttpResponse(json.dumps(temp_result))
+        else:
+            raise Exception()
+    except Exception as e:
+        logger.error(e.message)
+        return HttpResponse('404 NOT FOUND!!')
+    finally:
+        db.close()
+
+'''
+获取每个大景点下的小景点列表
+'''
+def get_scene_list(request):
+    db = dbhelper.DBHelper()
+    scene_name = None
+    offset = 0
+    try:
+        if request.method == 'GET':
+            scene_name = request.GET['scene_name']
+            offset = request.GET['offset']
+        if scene_name == None or offset == None:
+            raise Exception
+        temp_result = db.get_scene_list(scene_name, int(offset))
+        for t in temp_result:
+            t['picture'] = t['picture'].split(';')[0]
+            scores = t['score'].split(',')
+            t['chi_score'] = scores[0]
+            t['eng_score'] = scores[1]
+            t['thai_score'] = scores[2]
+        return HttpResponse(temp_result)
+
+    except Exception as e:
+        return HttpResponse('404 NOT FOUND!!')
+    finally:
+        db.close()
+
+def recommend_hot_search(request):
+    db = None
+    try:
+        db = dbhelper.DBHelper()
+        results = db.get_hot_search(0, 4)
+        result_content = []
         for result in results:
-            content ={}
-            content['picSrc'] = None if result['picture'] == None else result['picture'].split(';')[0]
-            content['titleSrc'] = '../search/search?scene=' + result['scene_name']
-            content['titleText'] = result['scene_name']
+            content = {}
+            content['piciture'] = None if result['picture'] == None else result['picture'].split(';')[0]
+            # content['titleSrc'] = '../search/search?scene=' + result['scene_name']
+            content['scene_name'] = result['scene_name']
             scores = db.get_score(result['scene_name'])
             logger.info(scores['score'])
             scores = scores['score'].split(',')
-            content['ch'] = scores[0] if scores[0] else 0
-            content['en'] = scores[1] if scores[1] else 0
-            content['th'] = scores[2] if scores[2] else 0
-            pictureContent.append(json.dumps(content))
-        return render(request, 'Search/sceneList.html', {'pictureContent': json.dumps(pictureContent),
-                                                          'maxPage': max_page})
-    elif status == 0:
-        result = db.get_scene_content(search_word)
-        result_dict = {}
-        # logger.info(result)
-        if result['picture'] != None:
-            pictures = result['picture'].split(';')
-            maxPic = 5 if len(pictures) > 5 else len(pictures)
-            result_dict['BigPic'] = pictures[0]
-            imgGroup = []
-            for i in range(1, maxPic):
-                imgGroup.append(pictures[i])
-        result_dict["imgGroup"] = imgGroup
-        scores = db.get_score(result['scene_name'])
-        scores = scores["score"].split(',')
-        result_dict['chEva'] = scores[0] if scores[0] else 0
-        result_dict['enEva'] = scores[1] if scores[1] else 0
-        result_dict['thEva'] = scores[2] if scores[2] else 0
-        num = 0
-        all_score = 0
-        for score in scores:
-            all_score += int(score)
-            if int(score):
-                num += 1
-        result_dict['totalEva'] = all_score / num
-        result_dict['mainBody'] = result['introduction']
-        result_dict['title'] = result['scene_name']
-        all_tag = get_tag(result['scene_name'])
-        tagGroup = []
-        for tag in all_tag:
-            tagGroup.append(tag)
+            content['chi_score'] = scores[0] if scores[0] else 0
+            content['eng_score'] = scores[1] if scores[1] else 0
+            content['thai_score'] = scores[2] if scores[2] else 0
+            result_content.append(content)
+        return HttpResponse(json.dumps(result_content))
+    except Exception as e:
+        print e.message
+        return HttpResponse('404 Not Found!')
 
-        # tagGroup = ['美食', '好玩', '天堂']
-        result_dict['tagGroup'] = tagGroup
-        # comments = db.get_scene_comments(result['scene_name'], 0)
-        return render(request, 'Search/detailCh.html', {'result_dict': json.dumps(result_dict)})
-    else:
-        return HttpResponse('404 NOT FOUND!!')
-    db.close()
+def hot_search(request):
+    db = None
+    try:
+        index = request.GET.get('page',default=1)
+        db = dbhelper.DBHelper()
+        results = db.get_hot_search(int(index), 8)
+        result_content = []
+        for result in results:
+            content = {}
+            content['piciture'] = None if result['picture'] == None else result['picture'].split(';')[0]
+            # content['titleSrc'] = '../search/search?scene=' + result['scene_name']
+            content['scene_name'] = result['scene_name']
+            scores = db.get_score(result['scene_name'])
+            logger.info(scores['score'])
+            scores = scores['score'].split(',')
+            content['chi_score'] = scores[0] if scores[0] else 0
+            content['eng_score'] = scores[1] if scores[1] else 0
+            content['thai_score'] = scores[2] if scores[2] else 0
+            result_content.append(json.dumps(content))
+        return HttpResponse(json.dumps(result_content))
+    except Exception as e:
+        return HttpResponse('404 Not Found!!')
+
+
+def get_translation(request):
+    db = dbhelper.DBHelper()
+    try:
+        scene_name = request.GET.get('scene_name')
+        index = request.GET.get('index')
+        lang = request.GET.get('lang')
+        result = db.get_single_scene_comments(scene_name, index, lang)
+        logger.info(result)
+        return HttpResponse(json.dumps(result))
+    except Exception as e:
+        logger.error(e.message)
+    finally:
+        db.close()
+
+
 
 
 # db = dbhelper.DBHelper()

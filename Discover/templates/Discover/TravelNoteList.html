@@ -3,17 +3,17 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>泰好玩推荐游记</title>
+		<title>泰好玩热门搜索</title>
 		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
-		<link type="text/css" rel="stylesheet" href="{% static 'css/Note.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/Search.css' %}" />
 		<script src="{% static 'js/jquery-3.2.0.min.js' %}" type="text/javascript" charset="utf-8"></script>
-		<script src="{% static 'js/sceneList.js' %}" type="text/javascript" charset="utf-8"></script>
+		<script src="{% static 'js/travelNoteList.js' %}" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			window.onload = function(){
 				var fun = init;
-				var allScene = {{ pictureContent|safe }};
-				var maxPage = {{maxPage|safe}}
-				fun(allScene, maxPage);
+				var allNotes = {{ picture_content|safe }};
+				var maxPage = {{max_page|safe}}
+				fun(allNotes, maxPage);
 			}
 		</script>
 	</head>
@@ -27,14 +27,14 @@
 				</div>		
 				<div class="collapse navbar-collapse" id="navbar_collapse">
 					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
-						<li >
+						<li class="linkColor">
 							<a href="../search/home"><i class="glyphicon glyphicon-home"></i> 首页</a>
 						</li>
-						<li class="active">
-							<a href="#" ><i class="glyphicon glyphicon-eye-open"></i> 推荐游记</a>
-						</li>
 						<li class="linkColor">
-							<a href="hotSearch.html"><i class="glyphicon glyphicon-hand-right"></i> 熱門搜索</a>
+							<a href="javascript：void(0)" ><i class="glyphicon glyphicon-eye-open"></i> 推荐游记</a>
+						</li>
+						<li class="active">
+							<a href="../search/hotsearch"><i class="glyphicon glyphicon-hand-right"></i> 热门搜索</a>
 						</li>
 						<li class="linkColor">
 							<a href="#"><i class="glyphicon glyphicon-user"></i> 登录</a>
@@ -44,24 +44,28 @@
 			</div>
 		</nav>
 		
+		
 		<div class="title">
-			<div class="hotArticles" >
+			<div class="hotSearch" >
 				<!--<button  class="rectangle"></button>-->
-				<span style=" font-size:25px ;">景点列表</span>
-				<form action="../search/search" method="post">
-					{% csrf_token %}
-					<input type="text" id="input_text" name="search_word" style="color:#000000;"/>
-					<button  id="searchButton" class="search" value="submit" onclick="javascript:form.submit();"><i class="glyphicon glyphicon-search" style="color: #FFFFFF;width: 40px;"></i>
-					</button>
-				</form>
+				<span style="font-size:25px ;"> 热门搜索</span>
+				<input type="text" id="input_text" />
+				<button  class="search" id="searchButton">
+				<i class="glyphicon glyphicon-search" style="color: #FFFFFF;"></i>
+				</button>
 			</div>
 		</div>
 		
-		
-		<div class="pictures" id="pictureContent">
-			
+		<div class="hotPic">
+			<div class="container" >
+				<div class="row" id="pictureContent"> 
 
-			
+				</div>	
+				<div class="row" id="pictureContent">
+
+				</div>
+				
+			</div>
 		</div>
 		
 		<!--换页按钮-->
@@ -84,6 +88,6 @@
 				<p>Natural Language Processing. <span class="footer-logo">泰好玩</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
 			</div>
 		</footer>
-	
+			
 	</body>
 </html>
