@@ -28,16 +28,33 @@
 						<li class="active">
 							<a href="#"><i class="glyphicon glyphicon-home"></i> 首页</a>
 						</li>
+						<style>
+
+							.menuitem .caidan
+							{display: none;}
+							.menuitem:hover .caidan{
+								color: #00344B;
+								display: block;
+							}
+							.menuitem.caidan a:visited{color: #0a7b9c}
+							.menuitem.caidan a:link{text-decoration: none; color: #555555;}
+							.menuitem.caidan.a{color: #555555;!important;}
+							.menuitem{padding: 5px; margin-top: 10px; margin-left: 20px; padding-bottom: 20px;}
+
+						</style>
+						<!--导航条的发现，点击之后会有下拉框-->
 						<li class="dropdown">
-							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
-							<ul class="dropdown-menu " >
-								<li class="linkColor">
-									<a href="travelNote.html#navbar_collapse">推荐游记</a>
-								</li>
-								<li class="linkColor">
-									<a href="hotSearch.html" >热门搜索</a>
-								</li>
-							</ul>
+							<div class="menuitem">
+
+							<div><a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a></div>
+							<div class="caidan">
+
+								<br><a href="../discover/travelnotelist">推荐游记</a><br><br>
+
+
+									<a href="../search/hotsearch" >热门搜索</a>
+
+							</div> </div>
 						</li>
 						<li class="linkColor">
 							<a href="#"><i class="glyphicon glyphicon-hand-right"></i> 注册</a>

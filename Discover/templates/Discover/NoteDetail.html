@@ -1,0 +1,116 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>游记详情</title>
+		<script src="{% static 'js/NoteDetail.js' %}" type="text/javascript" charset="utf-8"></script>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/NotDetail.css' %}" />
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+		<style type="text/css">
+			body {
+				font-family:"楷体", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<!--基本导航条，包含标题和列表-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" style="padding-top: 5px;"><img  src="{% static 'img/logo.png' %}" style="height: 100px;"></a>
+				</div>		
+				<div class="collapse navbar-collapse" id="navbar_collapse">
+					<ul class="nav navbar-nav navbar-right" style="min-height: 50px;">
+						<li class="active">
+							<a href="#"><i class="glyphicon glyphicon-home"></i> 首页</a>
+						</li>
+						<!--导航条的发现，点击之后会有下拉框-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i> 发现</a>
+							<ul class="dropdown-menu " >
+								<li class="linkColor">
+									<a href="../discover/travelnote">推荐游记</a>
+								</li>
+								<li class="linkColor">
+									<a href="../discover/hos" >热门搜索</a>
+								</li>
+							</ul>
+						</li>
+						<li class="linkColor">
+							<a href="#"><i class="glyphicon glyphicon-hand-right"></i> 注册</a>
+						</li>
+						<li class="linkColor">
+							<a href="#"><i class="glyphicon glyphicon-user"></i> 登录</a>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</nav>
+		
+		<center><div id="wordContent">
+
+			<div class="head">
+				<p class="title">4月曼谷 普吉 pp岛 自由行</p>	
+				<p class="author">by 粉团子PINK</p>
+			</div>
+			<!--<div class="picAndWordIndex">
+				<div class="pic">
+					<hr class="fengexian"/>
+					<h6 >
+						<span class="glyphicon glyphicon-camera tagSize"></span>
+						<span class="dayIndex">第一天</span>
+						<span class="dayDate">| 2016-06-25 周六</span>
+					</h6>
+					<img class="beWriteImg" src="img/youji1.jpg">
+				</div>
+				<p class="picComment"><span class="glyphicon glyphicon-comment"></span>&nbsp广州南坐高铁到珠海。约1小时15分钟。出站就看得到红色瓦顶的拱北口岸。拖着行李走3分钟就到了。方便的很</p>
+			</div>-->
+			<div class="date">
+				<hr class="fengexian"/>
+				<h6 >
+					<span class="glyphicon glyphicon-camera tagSize"></span>
+					<span class="dayIndex">第二天</span>
+					<span class="dayDate">| 2016-06-26 周日</span>
+				</h6>
+			</div>
+
+
+				<div class="picAndComment">
+					<img class="beWriteImg" src="{% static 'img/youji3.jpg' %}">
+					<p class="picComment"><span class="glyphicon glyphicon-comment"></span>&nbsp住宿的地方离着大皇宫真的是比较近，所以可以步行，这样还可以领略一下泰国清晨的风土人情~是不是也是别有韵味呀~~话说真的是好干净的~</p>
+				</div>
+				<div class="addressComment">
+					<img class="commentPicSizeLeft" src="{% static 'img/commaLeft.png' %}" />
+					<p class="addressText">
+						曼谷其实有着大量的美术馆和博物馆，不论是皇家艺术馆还是散落在各处的私人画廊，不论是展示暹罗王国历史的博物馆，还是当代艺术家们的心血之作的私人艺廊（私心推荐ThongLor地区，属于曼谷中心区，日本人聚居于此，有很多值得探访的店铺和艺廊，恍惚有种在日本的错觉），甚至是街头艺术家们，都能激发热爱艺术和设计的人无限的热情。
+					</p>
+					<img class="commentPicSizeRight" src="{% static 'img/commaRight.png' %}"/>
+				</div>
+
+			
+			<div class="node">
+				<span class="glyphicon glyphicon-edit"></span>
+				<div class="word">
+					<p class="addressCh">曼谷旧国会大厦</p>
+					<p class="addressEn">Old Parliament House</p>
+					<p class="starComment">我的评价：</p>
+					<p class="comment">123456</p>
+				</div>
+			</div>
+			
+		</div></center>
+	
+		<!--底部-->
+		<footer id="footer">
+			<div class="container">
+				<p class="footer-p">关于我们 | 意见建议 | 其他问题</p>
+				<p>Natural Language Processing. <span class="footer-logo">泰好玩</span>. <span class="text-nowrap">Powered by Bootstrap</span></p>
+			</div>
+		</footer>
+
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	</body>
+</html>

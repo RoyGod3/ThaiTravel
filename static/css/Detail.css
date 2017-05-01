@@ -31,6 +31,7 @@
 
 .BigPic img {
 	width: 515px;
+	height:322px;
 }
 
 .picGroup {
@@ -41,6 +42,7 @@
 	margin-right: 12px;
 	margin-bottom: 30px;
 	width:120px;
+	height:120px;
 }
 
 .title {
@@ -132,6 +134,43 @@
 
 .user img {
 	width: 50px;
+	height: 50px;
+}
+
+#moreCommentLink {
+	color: #00344B;
+	width:800px;
+	margin: 0 auto;
+/*	padding-bottom: 20px;*/
+	text-align: center;
+}
+
+#commenIframe{
+	border: 0px;
+}
+
+.ph_move{
+	padding-left:10px;
+
+}
+.user_comment{
+	padding-top:10px;
+	padding-left:20px;
+	line-height:25px;
+	font-size:14px;
+}
+
+#user_name {
+	width: 60px;
+	height:17px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size:12px;
+}
+
+.level {
+	font-size: 12px;
 }
 
 .themore {
@@ -142,7 +181,7 @@
 .themore button {
 	border-radius: 0px;
 	border-style:none ;
-	margin-top: 30px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	width: 120px;
 	height: 25px;
@@ -163,18 +202,9 @@
 	font-family: "微软雅黑";
 	color: #FFF;
 }
-#moreCommentLink {
-	color: #00344B;
-	width:800px;
-	margin: 0 auto;
-/*	padding-bottom: 20px;*/
-	text-align: center;
-}
 
-#commenIframe{
-	border: 0px;
-}
 
+/*下面是调节不同的屏幕时某些标签的位置及大小*/
 @media (max-width: 767px) {  
 	    /*在小于768像素的屏幕里,这里的样式才生效*/  
 }  
@@ -186,4 +216,14 @@
 }  
 @media (min-width: 1200px) {  
 	    /*在大于1200像素的屏幕里,这里的样式才生效*/  
-}  
+}
+
+.translation {
+	/*display: none;*/
+	background-color: #00344B;
+	color: #FFF;
+	font-size: 10px;
+	border-radius: 0px;
+	border-style:none ;
+	outline:none;
+}
